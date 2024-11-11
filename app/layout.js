@@ -2,14 +2,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./_components/header";
-import AnimatedCursor from "react-animated-cursor";
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 import ProviderChakra from "./_components/ChakraProvider/ChakraProvider";
-import Footer from "./_components/Footer";
-import Scene1 from "./_components/ParticleCursors/Scene1";
 import Scene2 from "./_components/ParticleCursors/Scene2";
 import { HeaderVisibilityProvider } from "@/context/HeaderVisibilityProvider ";
-import { extendTheme } from '@chakra-ui/react';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -35,6 +30,72 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/FonceSans.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/poppins.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/pp.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/text.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/joinning.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/anydore.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/back.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/adrinejoin.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/head.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
         <HeaderVisibilityProvider>

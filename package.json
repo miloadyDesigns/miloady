@@ -37,7 +37,8 @@
     "swiper": "^11.1.14",
     "three": "^0.170.0",
     "threejs-toys": "^0.0.8",
-    "troika-three-text": "^0.50.3"
+    "troika-three-text": "^0.50.3",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.0.0",

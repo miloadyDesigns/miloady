@@ -9,8 +9,9 @@ export const useHeaderVisibility = () => {
 
 export const HeaderVisibilityProvider = ({ children }) => {
     const [isVisible, setIsVisible] = useState(false);
+    const [portfolioSlide, setPortfolioSlide] = useState(0)
     return (
-        <HeaderVisibilityContext.Provider value={{ isVisible, setIsVisible }}>
+        <HeaderVisibilityContext.Provider value={{ isVisible, setIsVisible, portfolioSlide, setPortfolioSlide }}>
             {children}
         </HeaderVisibilityContext.Provider>
     );

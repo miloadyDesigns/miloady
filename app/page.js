@@ -20,6 +20,9 @@ import ContactForm from "./_components/ContactForm/ContactForm";
 import ProcessSection from "./_components/Process";
 import { Tabs } from "@chakra-ui/react"
 import { RingLoader } from "react-spinners";
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
+
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 const websites = [
   {
@@ -329,7 +332,7 @@ export default function Home() {
   const serviceHeadSection = useRef()
   const scrollRef = useRef()
   const [loading, setLoading] = useState(true)
-
+  const sliderRef = useRef(null)
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
@@ -339,7 +342,7 @@ export default function Home() {
     // GSAP animations
     const tl = gsap.timeline();
 
-    tl.from(textRef.current, {
+    tl.from(".headref", {
       x: -600,
       opacity: 0,
       duration: 1,
@@ -461,8 +464,19 @@ export default function Home() {
     });
 
   });
+  const handleNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();  // Call slickNext() on the Slider component
+    }
+    console.log(sliderRef.current);
 
+  };
 
+  const handlePrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();  // Call slickPrev() on the Slider component
+    }
+  };
   return (
     <>
       {loading && <div className="w-screen h-screen absolute z-50 flex justify-center items-center" style={{
@@ -474,9 +488,6 @@ export default function Home() {
         {/* Loader, ensure it's centered */}
         <RingLoader color="white" size={200} />
       </div>
-
-
-
       }
       <div className="wrapper" ref={scrollRef}>
         <Suspense fallback={
@@ -489,7 +500,7 @@ export default function Home() {
           <div className="relative overflow-x-hidden section_one bg-black section">
             <section className="lg:w-[80%]  absolute top-0 flex flex-col h-full xs:w-[100%] lg:left-[8%] xs:left-0 z-10 ">
               <div className="h-full flex flex-col justify-center ">
-                <h1 ref={textRef} className="text-white xs:text-[30px] md:text-[42px] lg:text-[52px] 1366:text-[60px] 2xl:text-[86px] xs:ml-2 font-extrabold xl:text-[70px] font-pp">
+                <h1 ref={textRef} className="headref text-white xs:text-[30px] md:text-[42px] lg:text-[52px] 1366:text-[60px] 2xl:text-[86px] xs:ml-2 font-extrabold xl:text-[70px] font-pp">
                   UNLEASHING
                   <span className="font-back xl:text-[94px] xs:text-[34px] xls:text-[40px] lg:text-[74px] text-[#70000E] 1366:text-[104px] 2xl:text-[124px] ml-3">Creativity</span>
                   <br />
@@ -589,77 +600,84 @@ export default function Home() {
               <p className="text-white lg:hidden p-1 font-text xs:text-[14px] lg:text-lg">Explore our diverse portfolio showcasing innovative projects and successful collaborations across various industries. See how we bring creative ideas to life with precision and excellence.</p>
               {/* <SideButton title={"L&nbsp;&nbsp;E&nbsp;&nbsp;A&nbsp;&nbsp;R&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;O&nbsp;R&nbsp;&nbsp;E"} margin={'ml-2'} /> */}
             </div>
-            <div className="h-full portfolio-swiper">
+            <div className="portfolio-swiper ">
               <div className="mt-2">
                 <Tabs.Root defaultValue="Websites" variant="line" className="bg-transparent text-white  relative" style={{ "--tab-line-color": "#FF5733" }}>
-                  <Tabs.List className="flex xs:space-x-4 lg:space-x-0 lg:ml-[7%] xl:ml-[8%] relative">
-                    {/* Logo Tab */}
-                    <Tabs.Trigger
-                      value="Logo"
-                      className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                    >
+                  <div className="flex ">
+                    <Tabs.List className="flex xs:space-x-4 w-full lg:space-x-0 lg:ml-[7%] xl:ml-[8%] relative">
+                      {/* Logo Tab */}
+                      <Tabs.Trigger
+                        value="Logo"
+                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                      >
 
-                      Graphics
-                    </Tabs.Trigger>
-                    <Tabs.Trigger
-                      value="Branding"
-                      className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                    >
+                        Graphics
+                      </Tabs.Trigger>
+                      <Tabs.Trigger
+                        value="Branding"
+                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                      >
 
-                      Branding
-                    </Tabs.Trigger>
-                    {/* Websites Tab */}
-                    <Tabs.Trigger
-                      value="Websites"
-                      className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                    >
+                        Branding
+                      </Tabs.Trigger>
+                      {/* Websites Tab */}
+                      <Tabs.Trigger
+                        value="Websites"
+                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                      >
 
-                      Websites
-                    </Tabs.Trigger>
-                    <Tabs.Trigger
-                      value="Social Media"
-                      className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                    >
+                        Websites
+                      </Tabs.Trigger>
+                      <Tabs.Trigger
+                        value="Social Media"
+                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                      >
 
-                      Social Media
-                    </Tabs.Trigger>
-                    {/* Mobile Apps Tab */}
-                    <Tabs.Trigger
-                      value="Mobile Apps"
-                      className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                    >
+                        Social Media
+                      </Tabs.Trigger>
+                      {/* Mobile Apps Tab */}
+                      <Tabs.Trigger
+                        value="Mobile Apps"
+                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                      >
 
-                      Mobile Apps
-                    </Tabs.Trigger>
-                    {/* {/* Tab Indicator (Positioned below the active tab) */}
-                    <Tabs.Indicator className="bg-indigo-500 h-1 xs:hidden md:hidden absolute bottom-0  transition-all ease-in-out duration-300" />
-
-                  </Tabs.List>
+                        Mobile Apps
+                      </Tabs.Trigger>
+                    </Tabs.List>
+                    {/* <div className=" w-full xs:hidden xl:flex flex flex-row justify-end pr-12">
+                      <div className="border mx-2 w-20 h-full flex justify-center items-center rounded-md cursor-pointer hover:bg-black" onClick={handlePrev}>
+                        <FaChevronLeft size={20} color="white" />
+                      </div>
+                      <div className="border mx-2 w-20 h-full flex justify-center items-center rounded-md cursor-pointer hover:bg-black" onClick={handleNext}>
+                        <FaChevronRight size={20} color="white" />
+                      </div>
+                    </div> */}
+                  </div>
 
                   {/* Tabs Content */}
                   <Tabs.Content value="Websites">
                     <Suspense fallback={<h1>Loading..</h1>}>
-                      <Portfolio data={websites} />
+                      <Portfolio data={websites} ref={sliderRef} />
                     </Suspense>
                   </Tabs.Content>
                   <Tabs.Content value="Branding">
                     <Suspense fallback={<h1>Loading..</h1>}>
-                      <Portfolio data={branding} />
+                      <Portfolio data={branding} ref={sliderRef} />
                     </Suspense>
                   </Tabs.Content>
                   <Tabs.Content value="Mobile Apps">
                     <Suspense fallback={<h1>Loading..</h1>}>
-                      <Portfolio data={mobileApps} />
+                      <Portfolio data={mobileApps} ref={sliderRef} />
                     </Suspense>
                   </Tabs.Content>
                   <Tabs.Content value="Social Media">
                     <Suspense fallback={<h1>Loading..</h1>}>
-                      <Portfolio data={socialMedia} />
+                      <Portfolio data={socialMedia} ref={sliderRef} />
                     </Suspense>
                   </Tabs.Content>
                   <Tabs.Content value="Logo">
                     <Suspense fallback={<h1>Loading..</h1>}>
-                      <Portfolio data={logos} />
+                      <Portfolio data={logos} ref={sliderRef} />
                     </Suspense>
                   </Tabs.Content>
                 </Tabs.Root>

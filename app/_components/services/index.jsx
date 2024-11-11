@@ -86,10 +86,10 @@ const ServiceCard = ({ title, description, image, subheading }) => (
 
         <div className='w-[50%] xs:hidden  xl:hidden 2xl:block flex justify-center items-center'>
             <Image
-                className='w-full h-auto 2xl:w-[500px] xs:w-full'
+                className=''
                 src={image}
-                width={500}
-                height={400}
+                width={550}
+                height={550}
                 alt={title}
             />
         </div>

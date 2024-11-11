@@ -43,6 +43,7 @@ html.dark-mode {
   src: url('/fonts/FonceSans.ttf') format('truetype');
   /* Corrected format */
   font-weight: 300;
+  font-display: "swap";
 }
 
 @font-face {
@@ -50,43 +51,56 @@ html.dark-mode {
   src: url('/fonts/poppins.ttf') format('truetype');
   /* Corrected format */
   font-weight: 400;
+  font-display: "swap";
 }
 
 @font-face {
   font-family: 'pp';
   src: url('/fonts/pp.otf') format('opentype');
   /* Corrected format */
+  font-display: "swap";
 }
 
 @font-face {
   font-family: 'text';
   src: url('/fonts/text.ttf') format('truetype');
   /* Corrected format */
+  font-display: "swap";
 }
+
 @font-face {
   font-family: 'joinning';
   src: url('/fonts/joinning.ttf') format('truetype');
   /* Corrected format */
+  font-display: "swap";
 }
+
 @font-face {
   font-family: 'anydore';
   src: url('/fonts/anydore.otf') format('opentype');
   /* Corrected format */
+  font-display: "swap";
 }
+
 @font-face {
   font-family: 'back';
   src: url('/fonts/back.ttf') format('truetype');
   /* Corrected format */
+  font-display: "swap";
 }
+
 @font-face {
   font-family: 'adrinejoin';
   src: url('/fonts/adrinejoin.ttf') format('truetype');
   /* Corrected format */
+  font-display: "swap";
 }
+
 @font-face {
   font-family: 'head';
   src: url('/fonts/head.otf') format('opentype');
   /* Corrected format */
+  font-display: "swap";
 }
 
 

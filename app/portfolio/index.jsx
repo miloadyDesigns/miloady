@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Portfolio = ({ data }) => {
+const Portfolio = ({ data, ref }) => {
     const sliderRef = useRef(null);
     const settings = {
         className: 'center',
@@ -19,7 +19,9 @@ const Portfolio = ({ data }) => {
         autoplaySpeed: 4000,
         cssEase: "linear",
         // dots: true,
+        swipeToSlide: true,
         arrows: false,
+
         responsive: [
             {
                 breakpoint: 768,
@@ -33,7 +35,7 @@ const Portfolio = ({ data }) => {
 
     return (
         <div className=' p-2 '>
-            <Slider ref={sliderRef} {...settings}>
+            <Slider ref={ref} {...settings}>
                 {data.map((iteme, index) => (
                     <div key={index} className='lg:px-4 xs:px-2 rounded-lg'>
                         <div className='relative  xs:w-[100%] lg:w-[100%] rounded-lg border border-gray-500 '>
