@@ -11,6 +11,7 @@ import { useHeaderVisibility } from '@/context/HeaderVisibilityProvider ';
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Dialog from '../Dialog/Dialog';
+import SideDrawer from '../SideDrawer/SideDrawer';
 
 const designData = [
     {
@@ -53,8 +54,8 @@ const Header = ({ variant }) => {
     return (
         <>
             <header className={`h-[10vh] cs-sticky_header ${isSticky ? 'cs-sticky_header_active' : ''}`} style={{ display: isVisible ? 'none' : 'block' }}>
-                <div className='flex xs:hidden xl:flex flex-row h-full space-x-24 p-4 '>
-                    <div className='lg:w-[20%] xs:w-[90%] h-full flex items-center justify-center'>
+                <div className='flex xs:hidden xl:flex flex-row h-full space-x-12 p-4 ml-[7%]'>
+                    <div className='lg:w-[10%] xs:w-[90%] h-full flex items-center'>
                         <Link href={"/"}>
                             <Image
                                 className='w-full h-auto mt-6'
@@ -65,24 +66,27 @@ const Header = ({ variant }) => {
                             />
                         </Link>
                     </div>
-
-                    <div className='absolute right-[15%]'>
-                        <ul className='flex flex-row space-x-8  h-full text-md text-white items-center'>
-                            {/* <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] hidden'>A b o u t</Link></li>
+                    <div className=''>
+                        <ul className='flex flex-row space-x-8 pt-2 h-full text-md text-white items-center'>
+                            <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] hidden'>A b o u t</Link></li>
                             <li><DropDown service={"D e s i g n"} nestedServcies={designData} /></li>
                             <li><DropDown service={"D e v e l o p m e n t"} nestedServcies={designData} /></li>
                             <li><DropDown service={"M a r k e t i n g"} nestedServcies={designData} /></li>
                             <li><DropDown service={"A n i m a t i o n"} nestedServcies={designData} /></li>
                             <li><DropDown service={"A I"} nestedServcies={designData} /></li>
-                            <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] hidden'>C o n t a c t</Link></li> */}
-                            <li> <div className='shadow__btn bg-black cursor-pointer' onClick={handleCallClick}>
-                                <IoIosCall color='white' size={25} />
-                            </div></li>
-                            <li> <div className='shadow__btn bg-black cursor-pointer'>
-                                <Dialog />
+                            <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] '>B l o g</Link></li>
+                            <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] '>C o n t a c t</Link></li>
 
-                            </div></li>
                         </ul>
+                    </div>
+                    <div className='flex space-x-8  justify-end h-full w-[15%]'>
+                        <div className='shadow__btn bg-black cursor-pointer rounded-full' onClick={handleCallClick}>
+                            <IoIosCall color='white' size={26} />
+                        </div>
+                        <div className='shadow__btn bg-black cursor-pointer rounded-full'>
+                            <Dialog />
+                        </div>
+
                     </div>
                 </div>
             </header>
@@ -103,11 +107,17 @@ const Header = ({ variant }) => {
                             <li><DropDown service={"A n i m a t i o n"} nestedServcies={designData} /></li>
                             <li><DropDown service={"A I"} nestedServcies={designData} /></li>
                             <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] hidden'>C o n t a c t</Link></li> */}
+                        {/* 
+
+                            */}
                         <li> <div className='shadow__btn p-3 bg-black cursor-pointer' onClick={handleCallClick}>
                             <IoIosCall color='white' size={25} />
                         </div></li>
-                        <li> <div className='shadow__btn p-2 bg-black cursor-pointer'>
+                        {/* <li> <div className='shadow__btn p-2 bg-black cursor-pointer'>
                             <Dialog />
+                        </div></li> */}
+                        <li> <div className='shadow__btn p-2 bg-black cursor-pointer'>
+                            <SideDrawer />
                         </div></li>
                     </ul>
                 </div>

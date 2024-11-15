@@ -199,11 +199,11 @@ body {
 }
 
 .shadow__btn {
-  padding: 15px;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  font-size: 17px;
-  color: #fff;
-  letter-spacing: 4px;
   font-weight: 700;
   text-transform: uppercase;
   transition: 0.5s;

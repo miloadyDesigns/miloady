@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Suspense, useEffect, useRef, useState } from "react";
 import EnvoirnmentComp from "./_components/Envoirnment";
-import { Html, Loader } from "@react-three/drei";
+import { Html } from "@react-three/drei";
 import { Clouds } from "./_components/Clouds";
 import { useGSAP } from "@gsap/react";
 import Services from "./_components/services";
@@ -22,7 +22,8 @@ import { Tabs } from "@chakra-ui/react"
 import { RingLoader } from "react-spinners";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
-
+import Loader from "./_components/Loader/Loader";
+import ScrollContext from "@/context/ScrollContext";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 const websites = [
   {
@@ -479,17 +480,11 @@ export default function Home() {
   };
   return (
     <>
-      {loading && <div className="w-screen h-screen absolute z-50 flex justify-center items-center" style={{
-        background: "url('/image.png')",
-        backgroundSize: "cover",  // Make sure the image covers the entire screen
-        backgroundPosition: "center",  // Center the image in the container
-        animation: "pulse 3s infinite"
-      }}>
-        {/* Loader, ensure it's centered */}
-        <RingLoader color="white" size={200} />
-      </div>
-      }
+
+      {loading && <Loader />}
+
       <div className="wrapper" ref={scrollRef}>
+
         <Suspense fallback={
           <div className="w-screen h-screen bg-black absolute z-50 flex justify-center items-center">
             {/* Loader, ensure it's centered */}
@@ -782,9 +777,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
       </div >
+
     </>
 
   );

@@ -4,7 +4,7 @@ import { LuChevronDown } from 'react-icons/lu'
 
 export const AccordionItemTrigger = forwardRef(
   function AccordionItemTrigger(props, ref) {
-    const { children, indicatorPlacement = 'end', ...rest } = props 
+    const { children, indicatorPlacement = 'end', ...rest } = props
     return (
       <Accordion.ItemTrigger {...rest} ref={ref}>
         {indicatorPlacement === 'start' && (
@@ -31,7 +31,7 @@ export const AccordionItemContent = forwardRef(
       <Accordion.ItemContent>
         <Accordion.ItemBody {...props} ref={ref} />
       </Accordion.ItemContent>
-    ) 
+    )
   },
 )
 

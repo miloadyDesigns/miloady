@@ -3,7 +3,7 @@ import React from 'react';
 
 const DropDown = ({ service, nestedServcies }) => {
     return (
-        <div className="dropdown hidden">
+        <div className="dropdown ">
             <span className="dropdown-toggle font-myfont uppercase [word-spacing:2px]">{service}</span>
 
             <ul className="dropdown-menu">

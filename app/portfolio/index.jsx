@@ -34,7 +34,7 @@ const Portfolio = ({ data, ref }) => {
     };
 
     return (
-        <div className=' p-2 '>
+        <div className='p-2'>
             <Slider ref={ref} {...settings}>
                 {data.map((iteme, index) => (
                     <div key={index} className='lg:px-4 xs:px-2 rounded-lg'>
