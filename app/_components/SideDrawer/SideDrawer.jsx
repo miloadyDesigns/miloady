@@ -39,7 +39,7 @@ const SideDrawer = () => {
                             roundedTop={placement === "bottom" ? "l3" : undefined}
                             roundedBottom={placement === "top" ? "l3" : undefined}
                         >
-                            <Canvas gl={{ alpha: true }} style={{
+                            {/* <Canvas gl={{ alpha: true }} style={{
                                 width: "100vw",
                                 height: "100vh",
                                 position: "absolute",
@@ -51,7 +51,7 @@ const SideDrawer = () => {
                             }}>
 
                                 <Stars />
-                            </Canvas>
+                            </Canvas> */}
                             <DrawerHeader>
                                 <Image
                                     className=''

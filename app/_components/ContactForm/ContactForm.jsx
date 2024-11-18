@@ -143,9 +143,9 @@ const ContactForm = () => {
                     {statusMessage && <p className="text-white mt-4">{statusMessage}</p>}
                 </form>
             </div>
-            <div className='lg:hidden xs:block'>
+            {/* <div className='lg:hidden xs:block'>
                 <Footer />
-            </div>
+            </div> */}
         </div>
     );
 };

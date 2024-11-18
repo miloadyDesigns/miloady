@@ -1,81 +1,105 @@
-import React from 'react';
-import { For, Stack, Text } from '@chakra-ui/react';
+import { For, Stack, Text } from "@chakra-ui/react";
 import {
     AccordionItem,
     AccordionItemContent,
     AccordionItemTrigger,
     AccordionRoot,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
+import { useState } from "react";
 
 const items = [
-    { value: 'a', title: 'First Item', text: 'Some value 1...' },
-    { value: 'b', title: 'Second Item', text: 'Some value 2...' },
-    { value: 'c', title: 'Third Item', text: 'Some value 3...' },
+    {
+        value: "a",
+        title: "F i r s t  I t e m",
+        subOptions: [
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 1" },
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 2" },
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 3" },
+        ],
+    },
+    {
+        value: "b",
+        title: "S e c o n d  I t e m",
+        subOptions: [
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 1" },
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 2" },
+        ],
+    },
+    {
+        value: "c",
+        title: "T h i r d  I t e m",
+        subOptions: [
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 1" },
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 2" },
+            { title: "D E V E L O P M E N T", description: "Description for Sub Option 3" },
+        ],
+    },
 ];
 
+
 const Accordion = () => {
+    const [activeItem, setActiveItem] = useState("b");
+
+    const handleItemClick = (value) => {
+        setActiveItem(value);
+    };
+
     return (
-        <Stack gap="8" w="full" maxW="md" mx="auto" py="4">
-            <For each={['subtle']}>
-                {(variant) => (
-                    <Stack gap="4" w="full">
-                        {/* Title for Accordion */}
-
-                        {/* Accordion Container */}
+        <Stack gap="4">
+            <For each={["lg"]}>
+                {(size) => (
+                    <Stack gap="4">
                         <AccordionRoot
-                            variant={variant}
-                            key={variant}
+                            size={size}
+                            key={size}
                             collapsible
-                            defaultValue={['b']}
-                            allowMultiple
-                            p="4"
-                            borderRadius="lg"
-                            boxShadow="lg"
-                            bg="white"
-                            borderColor="gray.200"
-                            borderWidth="1px"
-                            _hover={{ boxShadow: 'xl' }}
                         >
-                            {/* Mapping through items to render each Accordion Item */}
                             {items.map((item, index) => (
-                                <AccordionItem
-                                    key={index}
-                                    value={item.value}
-                                    borderRadius="md"
-                                    _notLast={{ mb: 2 }}
-                                >
-                                    {/* Trigger/Title of Accordion Item */}
+                                <AccordionItem key={index} value={item.value}>
                                     <AccordionItemTrigger
-                                        py="4"
-                                        px="6"
-                                        fontSize="lg"
-                                        fontWeight="semibold"
-                                        textAlign="left"
-                                        _expanded={{
-                                            bg: 'teal.500',
-                                            color: 'black',
-                                            borderRadius: 'md',
-                                        }}
+                                        onClick={() => handleItemClick(item.value)}
+                                        color={activeItem === item.value ? "white" : "#D3D3D3"}
                                         _hover={{
-                                            bg: 'teal.100',
-                                            cursor: 'pointer',
+                                            bg: activeItem === item.value ? "teal.400" : "gray.300",
                                         }}
-                                        transition="all 0.2s ease"
-                                    >
-                                        {item.title}
-                                    </AccordionItemTrigger>
+                                        marginTop="17px"
+                                        borderRadius="md"
+                                        fontWeight="semibold"
 
-                                    {/* Content of Accordion Item */}
-                                    <AccordionItemContent
-                                        py="2"
-                                        px="6"
-                                        fontSize="md"
-                                        color="gray.600"
-                                        borderTop="1px"
-                                        borderColor="gray.200"
-                                        bg="gray.50"
                                     >
-                                        {item.text}
+                                        <h1 className=" text-xl font-roxbury uppercase">
+
+                                            {item.title}
+                                        </h1>
+                                    </AccordionItemTrigger>
+{/* operatus mick volkin */}
+                                    <AccordionItemContent paddingX="2" paddingY="2">
+                                        <Stack spacing="2" pl="2">
+                                            {item.subOptions.map((subOption, idx) => (
+                                                <Stack key={idx}>
+                                                    <Text
+                                                        onClick={() => handleItemClick(item.value)}
+
+                                                        borderRadius="md"
+                                                        color={"#FFFFFF33"}
+                                                        _hover={{
+                                                            bg:
+                                                                activeItem === item.value
+                                                                    ? "teal.200"
+                                                                    : "gray.100",
+                                                        }}
+                                                    >
+                                                        {subOption.title}
+                                                    </Text>
+                                                    <Text
+
+
+                                                    >
+                                                        {subOption.description}
+                                                    </Text>
+                                                </Stack>
+                                            ))}
+                                        </Stack>
                                     </AccordionItemContent>
                                 </AccordionItem>
                             ))}

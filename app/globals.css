@@ -22,12 +22,12 @@ html.dark-mode {
 }
 
 
-@layer components {
+/* @layer components {
   .wrapper {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     max-height: 100vh;
-    /* Keep this uncommented */
+    
   }
 
   .section {
@@ -35,9 +35,12 @@ html.dark-mode {
     width: 100%;
     scroll-snap-align: start;
   }
+} */
+
+.section{
+  height: 100vh;
+  width: 100vw;
 }
-
-
 @font-face {
   font-family: 'fonce';
   src: url('/fonts/FonceSans.ttf') format('truetype');
@@ -46,6 +49,12 @@ html.dark-mode {
   font-display: "swap";
 }
 
+@font-face {
+  font-family: 'roxbury';
+  src: url('/fonts/roxbury.otf') format('opentype');
+  /* Corrected format */
+  font-display: "swap";
+}
 @font-face {
   font-family: 'poppins';
   src: url('/fonts/poppins.ttf') format('truetype');

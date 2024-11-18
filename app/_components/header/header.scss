@@ -14,14 +14,33 @@ $accent: var(--accent);
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease;
+  padding-bottom: 4px
 }
 
 .cs-sticky_header_active {
   top: 0px;
-  background-color: #000;
+  background-color: #181818;
+  padding-bottom: 4px
 }
 
 
+@media (max-width: 1023px) {
+
+  /* Applies for xs to lg devices */
+  .cs-sticky_header_active {
+    background-color: transparent !important;
+    /* Transparent for xs to lg */
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Applies for larger devices (from lg upwards) */
+  .cs-sticky_header_active {
+    background-color: #181818 !important;
+    /* Solid background for lg and up */
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .cs-main_header {

@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <section className='w-full h-full'>
+        <section className='w-full h-full pt-6'>
             <div className='flex xs:flex-col lg:flex-row  justify-center'>
                 <div className="xs:w-[100%] lg:w-[28%] xs:p-4 lg:p-0 flex flex-col ">
                     <Image src={"/imp/mldLogo.png"} width={150} height={120} className=' text-white xs:hidden  xl:block mt-4' />

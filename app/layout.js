@@ -101,8 +101,8 @@ export default function RootLayout({ children }) {
 
         <HeaderVisibilityProvider>
           <ProviderChakra>
+            <Header />
             <Scene2>
-              <Header />
               {children}
             </Scene2>
           </ProviderChakra>
