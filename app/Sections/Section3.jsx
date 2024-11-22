@@ -1,5 +1,5 @@
-import { Canvas } from "@react-three/fiber";
-import StarsComp from "../_components/Stars";
+'use client'
+
 import { Tabs } from "@chakra-ui/react"
 import { Suspense, useRef } from "react";
 import Portfolio from "../portfolio";
@@ -306,26 +306,8 @@ const branding = [
 const Section3 = () => {
     const sliderRef = useRef()
     return (
-        <div className="relative  section_three bg-black section">
-            <Canvas gl={{ alpha: true }} style={{
-                width: "100vw",
-                height: "100vh",
-                zIndex: 0,
-            }}>
-
-                <StarsComp />
-
-            </Canvas>
-            <div className="overlay" style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.45)",
-                zIndex: 1,
-            }}></div>
-            <section className="absolute w-full xs:top-[13%] xl:top-[12%] 2xl:top-[15%] left-0 flex flex-col lg:h-[85%] xs:h-[90%] z-10">
+        <div className="relative  section_three xs:h-[70vh] lg:h-[80vh] xs:mb-[10%] lg:mb-[10%]">
+            <section className=" w-full  flex flex-col lg:h-[85%] xs:h-[90%] z-10">
                 <div className="portfolioSection text-white xs:ml-[8%] lg:ml-[7%] 2xl:ml-[8%] xl:ml-[7%]  lg:w-[50%] 2xl:w-[30%] xs:w-[90%]">
                     <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">Empowering the world through our technlogies</p>
                     <h1 className="text-while font-pp lg:text-[66px] xs:text-[38px] -mt-2">Our Portfolio</h1>
@@ -334,36 +316,34 @@ const Section3 = () => {
                 <div className="portfolio-swiper xs:mt-12 lg:mt-0">
                     <div className="mt-2">
                         <Tabs.Root defaultValue="Websites" variant="line" className="bg-transparent text-white  relative" style={{ "--tab-line-color": "#FF5733" }}>
-                            <div className="flex ">
-                                <Tabs.List className="flex xs:space-x-4 w-full lg:space-x-0 lg:ml-[7%] xl:ml-[8%] relative">
+                            <div className="flex">
+                                <Tabs.List
+                                    className="flex xs:space-x-4 lg:space-x-0 lg:ml-[7%] xl:ml-[8%] relative overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-700"
+                                >
                                     {/* Logo Tab */}
                                     <Tabs.Trigger
                                         value="Logo"
-                                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
                                     >
-
                                         Graphics
                                     </Tabs.Trigger>
                                     <Tabs.Trigger
                                         value="Branding"
-                                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
                                     >
-
                                         Branding
                                     </Tabs.Trigger>
                                     {/* Websites Tab */}
                                     <Tabs.Trigger
                                         value="Websites"
-                                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
                                     >
-
                                         Websites
                                     </Tabs.Trigger>
                                     <Tabs.Trigger
                                         value="Social Media"
-                                        className="flex items-center  p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
+                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
                                     >
-
                                         Social Media
                                     </Tabs.Trigger>
                                     {/* Mobile Apps Tab */}
@@ -371,7 +351,6 @@ const Section3 = () => {
                                         value="Mobile Apps"
                                         className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
                                     >
-
                                         Mobile Apps
                                     </Tabs.Trigger>
                                 </Tabs.List>
@@ -406,6 +385,7 @@ const Section3 = () => {
                         </Tabs.Root>
                     </div>
                 </div>
+
             </section>
         </div>
     )

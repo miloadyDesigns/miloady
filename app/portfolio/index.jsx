@@ -38,14 +38,14 @@ const Portfolio = ({ data, ref }) => {
             <Slider ref={ref} {...settings}>
                 {data.map((iteme, index) => (
                     <div key={index} className='lg:px-4 xs:px-2 rounded-lg'>
-                        <div className='relative  xs:w-[100%] lg:w-[100%] rounded-lg border border-gray-500 '>
+                        <div className='relative  xs:w-[100%] lg:w-[100%] rounded-lg border  border-gray-500 '>
                             <div className='bg-black bg-opacity-40 backdrop-blur-2xl rounded-lg w-full h-full shadow-md'>
                                 <div className="xs:hidden lg:block ">
                                     <Image
                                         src={iteme.image}
                                         width={400}
                                         height={400}
-                                        className='object-cover w-full h-full rounded-lg'
+                                        className='object-cover w-full rounded-lg'
                                         alt="Portfolio Image"
                                     />
                                 </div>
@@ -54,7 +54,7 @@ const Portfolio = ({ data, ref }) => {
                                         src={iteme.image}
                                         width={400}
                                         height={400}
-                                        className='object-contain w-full h-full  rounded-lg'
+                                        className='object-contain w-full   rounded-lg'
                                         alt="Portfolio Image"
                                     />
                                 </div>

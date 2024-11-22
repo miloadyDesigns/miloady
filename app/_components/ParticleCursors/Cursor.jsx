@@ -47,7 +47,7 @@ export default function LightShadowCursor({ isActive }) {
     }, [isActive]);
 
     return (
-        <div className='relative h-screen'>
+        <div className='relative h-screen z-[10]'>
             <div
                 style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.65)', // Solid white

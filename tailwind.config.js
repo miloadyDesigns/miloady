@@ -17,7 +17,8 @@ module.exports = {
         anydore: ['anydore'],
         adrinejoin: ['adrinejoin'],
         back: ['back'],
-        roxbury: ['roxbury']
+        roxbury: ['roxbury'],
+        roboto: ['roboto']
       },
       boxShadow: {
         'custom-glow': '0 0 5px rgb(219, 14, 14), 0 0 15px rgb(196, 23, 17), 0 0 30px rgb(199, 22, 16), 0 0 60px rgb(216, 19, 19)',

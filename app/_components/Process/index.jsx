@@ -45,7 +45,7 @@ const items = [
 ]
 const ProcessSection = () => {
     return (
-        <AccordionRoot collapsible defaultValue={[items[0].name]} className="bg-gray-700 bg-opacity-30 backdrop-blur-xl rounded-lg shadow-lg p-8 w-full">
+        <AccordionRoot collapsible defaultValue={[items[0].name]} className="bg-black bg-opacity-30 backdrop-blur-xl rounded-lg  p-8 w-full shadow-custom-glow-light">
             {items.map((item, index) => (
                 <AccordionItem key={index} value={item.name} className="text-white p-4 ">
                     <AccordionItemTrigger>

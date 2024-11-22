@@ -19,7 +19,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Top USA agency Miloady Designs Provides Expert Logo Design Web Development Social Media Marketing SEO and Mobile App Solutions",
+  title: "Welcome - MiloadyDesigns",
   description: "Top USA agency Miloady Designs Provides Expert Logo Design Web Development Social Media Marketing SEO and Mobile App Solutions",
 };
 const config = {

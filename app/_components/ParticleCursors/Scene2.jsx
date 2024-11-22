@@ -7,8 +7,8 @@ export default function Scene2({ children }) {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <div className='flex items-center justify-center'>
-            <div onMouseOver={() => { setIsActive(true) }} onMouseLeave={() => { setIsActive(false) }} >{children}</div>
+        <div className='flex items-center justify-center z-[2]'>
+            <div className='z-[2]' onMouseOver={() => { setIsActive(true) }} onMouseLeave={() => { setIsActive(false) }} >{children}</div>
             <Cursor isActive={isActive} />
         </div>
     )

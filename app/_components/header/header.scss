@@ -14,33 +14,50 @@ $accent: var(--accent);
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease;
-  padding-bottom: 4px
 }
 
 .cs-sticky_header_active {
   top: 0px;
-  background-color: #181818;
-  padding-bottom: 4px
+  background-color: #0A0A0A !important;
 }
 
+// @media screen and (min-width: 768px) {
 
-@media (max-width: 1023px) {
+//   /* Adjust max-width as per your requirement */
+//   .cs-sticky_header,
+//   .cs-sticky_header_active {
+//     display: none !important;
+//   }
+// }
 
-  /* Applies for xs to lg devices */
-  .cs-sticky_header_active {
-    background-color: transparent !important;
-    /* Transparent for xs to lg */
+// @media screen and (max-width: 1400px) {
+
+//   .cs-sticky_header,
+//   .cs-sticky_header_active {
+//     display: none !important;
+//   }
+// }
+
+.cs-sticky_header1 {
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.4s ease;
+}
+
+.cs-sticky_header_active1 {
+  top: 0px;
+  background-color: #0A0A0A !important;
+}
+
+@media screen and (min-width: 769px) {
+
+  .cs-sticky_header1,
+  .cs-sticky_header_active1 {
+    display: none !important;
   }
 }
 
-@media (min-width: 1024px) {
-
-  /* Applies for larger devices (from lg upwards) */
-  .cs-sticky_header_active {
-    background-color: #181818 !important;
-    /* Solid background for lg and up */
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .cs-main_header {

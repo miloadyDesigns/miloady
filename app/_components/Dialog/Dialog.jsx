@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import {
     DialogBody,
@@ -56,7 +57,7 @@ const Dialog = ({ size }) => {
         <DialogRoot size="lg" placement="center" motionPreset="slide-in-bottom" >
             <DialogTrigger asChild>
                 <div>
-                    <MdEmail color='white' size={size ? 20 : 25} />
+                    <MdEmail color='white' size={size} />
                 </div>
             </DialogTrigger>
             <DialogContent className="bg-black shadow-custom-glow-light">

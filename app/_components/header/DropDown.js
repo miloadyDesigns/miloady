@@ -1,10 +1,11 @@
 // DropDown.js
+import Link from 'next/link';
 import React from 'react';
 
-const DropDown = ({ service, nestedServcies }) => {
+const DropDown = ({ service, nestedServcies, link }) => {
     return (
         <div className="dropdown ">
-            <span className="dropdown-toggle font-myfont uppercase [word-spacing:2px]">{service}</span>
+            <span className="dropdown-toggle font-myfont uppercase [word-spacing:2px]"><Link href={link}> {service}</Link></span>
 
             <ul className="dropdown-menu">
                 <div className='flex flex-row'>

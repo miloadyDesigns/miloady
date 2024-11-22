@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import EnvoirnmentComp from '../_components/Envoirnment'
 import { Canvas } from '@react-three/fiber'
@@ -63,7 +64,7 @@ const Section1 = () => {
                 }}
             >
                 <Image
-                    src="/envoirnment/Galaxy-BK.png"
+                    src="/image.png"
                     alt="Galaxy Background"
                     layout="fill" // Makes the image cover the entire container
                     objectFit="cover" // Ensures the image maintains its aspect ratio while covering the area
