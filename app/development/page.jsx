@@ -6,18 +6,26 @@ import "./style.css"
 import Section3 from '../Sections/DevelopmentSections/Section3'
 import Section4 from '../Sections/DevelopmentSections/Section4'
 import Footer from '../_components/Footer'
+import CommonSections from '../Sections/CommonSections/CommonSections'
+import ScrollContext from '@/context/ScrollContext'
+export const metadata = {
+    title: "Development"
+}
 const page = () => {
     return (
         <section className='relative w-screen bg-black'>
             <LightStars />
             <div className='relative z-[1]'>
-                <Section1 />
-                <Section2 />
-                <Section3 />
-                <Section4 />
-                <div className='bg-[#0A0A0A]'>
-                    <Footer />
-                </div>
+                <ScrollContext>
+                    <Section1 />
+                    <Section2 />
+                    <Section3 />
+                    <Section4 />
+                    <CommonSections />
+                    <div className='bg-[#0A0A0A]'>
+                        <Footer />
+                    </div>
+                </ScrollContext>
             </div>
 
         </section>

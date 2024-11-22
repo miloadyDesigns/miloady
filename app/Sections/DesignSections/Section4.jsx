@@ -16,7 +16,7 @@ const Section4 = () => {
     });
 
     return (
-        <div className='relative z-10 w-screen mt-[5%] pb-[10%] ' ref={ref}>
+        <div className='relative z-10 w-screen mt-[5%] pb-[5%] ' ref={ref}>
 
             <div className="xs:w-[90%] lg:w-[80%] m-auto  overflow-hidden z-10 ">
                 <div className='bg-black w-[90%] border border-gray-500 p-4 m-auto rounded-xl'>

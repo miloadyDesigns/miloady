@@ -14,6 +14,7 @@ import Section5 from "./Sections/Section5";
 import Section6 from "./Sections/Section6";
 import LightStars from "./_components/LightStars/Stars";
 import Footer from "./_components/Footer";
+import CommonSections from "./Sections/CommonSections/CommonSections";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
@@ -184,6 +185,7 @@ export default function Home() {
             <Section4 />
             <Section5 />
             <Section6 />
+            <CommonSections />
             <div className='bg-[#0A0A0A]'>
               <Footer />
             </div>

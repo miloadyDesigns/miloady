@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section5 = () => {
     return (
-        <div className="relative z-[1] xs:mb-[10%] lg:mb-[5%]">
+        <div className="relative z-[1] xs:mb-[10%] lg:mb-[10%]">
             <div className="xs:w-[90%] lg:w-[80%] m-auto">
                 <div className='w-full pt-[10%] flex xs:flex-col lg:flex-row justify-between'>
 

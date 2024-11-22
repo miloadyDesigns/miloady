@@ -11,8 +11,8 @@ const Section2 = () => {
         <div className='relative z-10 w-screen  pb-12'>
             <div className='z-10 h-full'>
                 <div id='section2' className="xs:w-[90%] lg:w-[90%] m-auto overflow-hidden z-10 h-full">
-                    <div className='p-2 h-full flex justify-around  mt-[8%]'>
-                        <div className='w-[40%]  h-full p-4'>
+                    <div className='p-2 h-full flex xs:flex-col lg:flex-row justify-around  mt-[8%]'>
+                        <div className='xs:w-[100%] lg:w-[40%]  h-full p-4'>
                             <h2 className='font-pp text-[#fff] mb-4 xs:text-sm lg:text-sm xl:text-xl'>C O N T A C T&nbsp; U S</h2>
                             <h1 className='text-white xs:text-[32px] lg:text-[42px] xl:text-[52px] leading-none font-roboto'>
                                 Have a question?
@@ -49,38 +49,38 @@ const Section2 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[50%]  h-full'>
+                        <div className='xs:w-[100%] lg:w-[50%]  h-full'>
                             <form action="" className='mt-16'>
-                                <div className='w-full flex justify-around '>
-                                    <div className='flex w-[40%] '>
+                                <div className='w-full flex xs:flex-col lg:flex-row justify-around '>
+                                    <div className='flex xs:w-[100%] lg:w-[40%] xs:mt-4 lg:mt-0'>
                                         <FaRegUser color='white' size={25} className='absolute ' />
-                                        <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white  pl-12 pb-4 text-xl placeholder-gray-300 " placeholder='Name' />
+                                        <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white  pl-12 pb-4 xs:text-sm lg:text-xl placeholder-gray-300 " placeholder='Name' />
                                     </div>
-                                    <div className='flex w-[40%] '>
+                                    <div className='flex xs:w-[100%] lg:w-[40%] xs:mt-4 lg:mt-0 '>
                                         <IoIosMail color='white' size={25} className='absolute ' />
                                         <input
                                             type="text"
-                                            className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-4 text-xl placeholder-gray-300"
+                                            className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-4 xs:text-sm lg:text-xl placeholder-gray-300"
                                             placeholder="Email"
                                         />
 
                                     </div>
                                 </div>
-                                <div className='w-full flex justify-around mt-14'>
-                                    <div className='flex w-[40%] '>
+                                <div className='w-full flex xs:flex-col lg:flex-row justify-around xs:mt-0 lg:mt-14'>
+                                    <div className='flex xs:w-[100%] lg:w-[40%] xs:mt-4 lg:mt-0'>
                                         <FaPhoneVolume color='white' size={25} className='absolute ' />
-                                        <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-4 text-xl placeholder-gray-300 " placeholder='Phone' />
+                                        <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-4 xs:text-sm lg:text-xl placeholder-gray-300 " placeholder='Phone' />
                                     </div>
-                                    <div className='flex w-[40%] '>
+                                    <div className='flex xs:w-[100%] lg:w-[40%] xs:mt-4 lg:mt-0'>
                                         <MdHomeRepairService color='white' size={25} className='absolute' />
-                                        <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-4 text-xl placeholder-gray-300 " placeholder='Subject' />
+                                        <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-4 xs:text-sm lg:text-xl placeholder-gray-300 " placeholder='Subject' />
                                     </div>
                                 </div>
-                                <div className='w-[90%] m-auto mt-14'>
+                                <div className='xs:w-[100%] lg:w-[90%] m-auto xs:mt-8 lg:mt-14'>
                                     <FaPencilAlt color='white' size={25} className='absolute ' />
-                                    <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-6 text-xl placeholder-gray-300 " placeholder='How can we help you? Feel free to get in touch!' />
+                                    <input type="text" className="bg-transparent border border-b-2 border-t-0 border-r-0 border-l-0 border-gray-600 w-full text-white focus:outline-none focus:border-white pl-12 pb-6 xs:text-sm lg:text-xl placeholder-gray-300 " placeholder='How can we help you? Feel free to get in touch!' />
                                 </div>
-                                <div className='w-[50%] mt-10  ml-12'>
+                                <div className='w-[50%] mt-10 xs:ml-4 lg:ml-12'>
                                     <button class="cssbuttons-io-button">
                                         Get in touch
                                         <div class="icon">

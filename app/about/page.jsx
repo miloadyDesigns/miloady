@@ -9,7 +9,10 @@ import Section4 from '../Sections/AboutSections/Section4';
 import Section5 from '../Sections/AboutSections/Section5';
 import Footer from '../_components/Footer';
 import ScrollContext from '@/context/ScrollContext';
-
+import CommonSections from '../Sections/CommonSections/CommonSections';
+export const metadata = {
+    title: "About ",
+}
 const Page = () => {
     return (
         <div className="relative bg-black w-screen">
@@ -39,6 +42,7 @@ const Page = () => {
                     <Section3 />
                     <Section4 />
                     <Section5 />
+                    <CommonSections/>
                     <div className='bg-[#0A0A0A]'>
                         <Footer />
                     </div>

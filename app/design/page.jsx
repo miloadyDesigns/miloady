@@ -7,6 +7,10 @@ import Section3 from '../Sections/DesignSections/Section3'
 import "./style.css"
 import Section4 from '../Sections/DesignSections/Section4'
 import Footer from '../_components/Footer'
+import CommonSections from '../Sections/CommonSections/CommonSections'
+export const metadata = {
+    title: "Design"
+}
 const page = () => {
     return (
         <section className='relative w-screen bg-black'>
@@ -17,6 +21,7 @@ const page = () => {
                     <Section2 />
                     <Section3 />
                     <Section4 />
+                    <CommonSections />
                     <div className='bg-[#0A0A0A]'>
                         <Footer />
                     </div>

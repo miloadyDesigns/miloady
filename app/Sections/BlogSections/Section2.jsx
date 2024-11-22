@@ -60,11 +60,11 @@ const data = [
 
 const Section2 = () => {
     return (
-        <div className="relative z-[10] w-screen mb-12">
+        <div className="relative z-[10] w-screen xs:mt-[10%] lg:mt-0 mb-[10%]">
             <div className="z-10 pt-[5%]">
                 <div className="xs:w-[90%] lg:w-[80%] m-auto h-full overflow-hidden z-10 ">
 
-                    <div className='flex justify-center  flex-wrap space-x-4'>
+                    <div className='flex justify-center flex-wrap gap-4'>
                         {data.map((blog, index) => (
                             <Cards
                                 key={index}

@@ -6,6 +6,9 @@ import Section2 from '../Sections/ContactSections/Section2'
 import Marquee from 'react-fast-marquee'
 import Footer from '../_components/Footer'
 import Section3 from '../Sections/ContactSections/Section3'
+export const metadata ={
+    title:"Contact"
+}
 const page = () => {
     return (
         <section className='relative w-screen bg-black'>

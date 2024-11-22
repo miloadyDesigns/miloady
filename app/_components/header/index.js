@@ -77,7 +77,7 @@ const Header = ({ variant }) => {
                             <li><DropDown service={"A n i m a t i o n"} nestedServcies={designData} link={"/animation"} /></li>
                             {/* <li><DropDown service={"A I"} nestedServcies={designData} /></li> */}
                             <li><Link href="/blog" className='font-myfont uppercase [word-spacing:2px] '>B l o g</Link></li>
-                            <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px] '>C o n t a c t</Link></li>
+                            <li><Link href="/contact" className='font-myfont uppercase [word-spacing:2px] '>C o n t a c t</Link></li>
 
                         </ul>
                     </div>
