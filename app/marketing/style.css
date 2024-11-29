@@ -52,7 +52,7 @@
     display: block;
     width: 180px;
     height: 180%;
-    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, transparent);
+    background: linear-gradient(90deg, transparent, #bb6d01, #bb6d01, #bb6d01, transparent);
     animation: rotation_481 5000ms infinite linear;
 }
 
@@ -156,14 +156,14 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-color: #ffbb66;
+    background-color: #bb6d01;
     position: absolute;
     filter: blur(20px);
     animation: floating 2600ms infinite linear;
 }
 
 #bottom {
-    background-color: #ff8866;
+    background-color: #bb6d01;
     left: 40px;
     top: 0px;
     width: 180px;

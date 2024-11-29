@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cards = () => {
+const Cards = ({ title, image, description }) => {
     return (
         <div className="designCards">
             <div className="content">
@@ -8,11 +8,11 @@ const Cards = () => {
                     <div className="back-content">
                         {/* This can be used for a back image, or additional information */}
                         <img
-                            src="/designPage/manufacturing.svg"
+                            src={image}  // Use the image prop passed from parent
                             alt="Back Image"
                             style={{ width: '50%', height: '50%', objectFit: 'contain', borderRadius: '15px' }}
                         />
-                        <strong className='text-3xl'>Graphic Designs</strong>
+                        <strong className='text-2xl'>{title}</strong> {/* Use title prop here */}
                     </div>
                 </div>
                 <div className="front">
@@ -27,7 +27,7 @@ const Cards = () => {
                         <div className="description">
                             <div className="title">
                                 <p className="title text-2xl">
-                                    <strong>Spaghetti Bolognese</strong>
+                                    <strong>{title}</strong> {/* Display the title here */}
                                 </p>
 
                                 {/* Decorative Icon (Optional) */}
@@ -62,7 +62,7 @@ const Cards = () => {
                             </div>
 
                             <p className="service-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsam recusandae veritatis sed asperiores? Soluta voluptatum non maiores nemo necessitatibus, inventore culpa dignissimos corrupti nulla harum repudiandae nostrum nisi accusamus expedita veniam illo ducimus excepturi qui reprehenderit quos exercitationem alias cupiditate possimus.
+                                {description} {/* Use the description prop here */}
                             </p>
 
                             {/* <p className="card-footer">
@@ -74,6 +74,6 @@ const Cards = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Cards;

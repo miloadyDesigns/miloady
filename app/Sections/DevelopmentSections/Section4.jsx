@@ -16,7 +16,7 @@ const Section4 = () => {
                     <div className='text-white'>
                         <h1 className='text-3xl'>Impressive MileStone</h1>
                         <p className='text-[14px] pt-4 text-gray-400'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias harum quod ab exercitationem. Praesentium, est mollitia! Nisi, unde magnam eveniet iste, natus voluptas, corrupti illo ullam sequi excepturi velit. Ex quam dolo ribus error soluta beatae enim, accusantium dolores rem placeat corrupti asperiores, sapiente ratione reprehenderit aliquam nihil eum, dolor obcaecati. Cupiditate odit, magnam reiciendis veritatis ratione unde distinctio enim tenetur, omnis nisi eum accusantium iusto, perferendis natus! Quaerat, ullam.
+                        At Milaody Design, we pride ourselves on achieving key milestones that demonstrate our commitment to excellence. From delivering custom solutions to driving measurable business growth for our clients, each milestone reflects our dedication to quality and innovation. Whether it's launching a successful website, achieving top rankings through SEO, or running high-performing marketing campaigns, we continuously strive to exceed expectations. Our journey is defined by the success stories of our clients, and we are excited to continue reaching new heights together.
                         </p>
                         <div className='mt-6 flex justify-around flex-wrap pb-4'>
                             <div>
@@ -88,24 +88,24 @@ const Section4 = () => {
 
                         <div className='xs:w-[100%] lg:w-[45%] '>
                             <div className='ml-3'>
-                                <h2 className='font-pp text-[#ce553f] mb-4 xs:text-sm lg:text-sm xl:text-xl'>D E V E L O P M E N T</h2>
-                                <h1 className='text-white xs:text-[32px] lg:text-[42px] xl:text-[52px] leading-none font-roboto'>
+                                <h2 className='font-pp text-[#ea3133] mb-4 xs:text-sm lg:text-sm xl:text-xl'>D E V E L O P M E N T</h2>
+                                <h1 className='text-white xs:text-[32px] lg:text-[42px] xl:text-[46px] leading-tight font-roboto'>
                                     How will a custom built development generate more sales for my business?
                                 </h1>
                             </div>
-                            <div className='mt-4 ml-3'>
-                                <h2 className='text-white font-bold text-2xl'>Personalization</h2>
-                                <p className='text-white text-lg'>The site is tailored to your target audience, allowing you to personalize the content and offers to their needs and preferences. This can help to increase engagement and conversion rates.</p>
-                                <h2 className='text-white font-bold text-2xl mt-4'>Mobile optimization</h2>
-                                <p className='text-white text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti ullam magni, iusto quos quam odio necessitatibus ratione culpa quisquam odit maiores rerum, rem excepturi aliquid modi sequi praesentium enim exercitationem animi amet. Aspernatur quia suscipit voluptatem rem, commodi distinctio eius non cupiditate, aut sit debitis, nisi vero. Dicta, deleniti?</p>
-                                <h2 className='text-white font-bold text-2xl mt-4'>Scalability</h2>
-                                <p className='text-white text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti ullam magni, iusto quos quam odio necessitatibus ratione culpa quisquam odit maiores rerum, rem excepturi aliquid modi sequi praesentium enim exercitationem animi amet. Aspernatur quia suscipit voluptatem rem, commodi distinctio eius non cupiditate, aut sit debitis, nisi vero. Dicta, deleniti?</p>
+                            <div className='mt-4 ml-5'>
+                                <h2 className='text-white font-bold text-2xl'>Enhanced User Experience</h2>
+                                <p className='text-white text-lg'>A custom-built solution ensures faster load times, intuitive navigation, and an overall superior user experience. This encourages visitors to stay longer and engage more, boosting conversion rates.</p>
+                                <h2 className='text-white font-bold text-2xl mt-4'>Scalability and Performance</h2>
+                                <p className='text-white text-lg'>Custom systems are designed to grow with your business, seamlessly handling increased traffic and expanding functionalities as needed. This scalability ensures your operations remain efficient, even as demands rise.</p>
+                                <h2 className='text-white font-bold text-2xl mt-4'>Brand Differentiation</h2>
+                                <p className='text-white text-lg'>A bespoke development solution allows you to stand out with a unique platform tailored to your brand's identity. This differentiation enhances your credibility and builds stronger connections with your target audience.</p>
                                 {/* <p className='text-white text-lg mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti ullam magni, iusto quos quam odio necessitatibus ratione culpa quisquam odit maiores rerum, rem excepturi aliquid modi sequi praesentium enim exercitationem animi amet. Aspernatur quia suscipit voluptatem rem, commodi distinctio eius non cupiditate, aut sit debitis, nisi vero. Dicta, deleniti?</p> */}
                             </div>
                         </div>
                         <div className='xs:w-[100%] lg:w-[45%] h-full  rounded-xl xs:mt-12 lg:mt-0'>
                             <img
-                                src="/development/development2.png"
+                                src="/development/2.png"
                                 alt="Why Choose Us"
                                 className="rounded-lg bg-no-repeat m-auto w-full h-full"
                             />

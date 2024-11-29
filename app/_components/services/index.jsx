@@ -3,7 +3,6 @@ import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import { GrFormNextLink } from "react-icons/gr";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from "swiper/modules"
 
 import 'swiper/css';
 
@@ -129,7 +128,7 @@ const Services = () => {
                 disableOnInteraction: false,// Prevent autoplay from disabling on interaction
             }}
             speed={5000}
-            modules={[Autoplay]}
+            // modules={[Autoplay]}
             breakpoints={{
                 320: {
                     slidesPerView: 1,

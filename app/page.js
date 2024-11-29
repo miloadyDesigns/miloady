@@ -15,6 +15,7 @@ import Section6 from "./Sections/Section6";
 import LightStars from "./_components/LightStars/Stars";
 import Footer from "./_components/Footer";
 import CommonSections from "./Sections/CommonSections/CommonSections";
+import PinSection from "./_components/CommonSection/PinSection/PinSection";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
@@ -182,7 +183,8 @@ export default function Home() {
             </section>
             <Section2 />
             <Section3 />
-            <Section4 />
+            {/* <Section4 /> */}
+            <PinSection />
             <Section5 />
             <Section6 />
             <CommonSections />

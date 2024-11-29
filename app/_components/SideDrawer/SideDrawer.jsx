@@ -1,5 +1,6 @@
-import React from 'react';
-import { For, HStack } from "@chakra-ui/react";
+'use client'
+import React, { useState } from 'react';
+import { For, HStack, useDisclosure } from "@chakra-ui/react";
 import { Button } from "@/components/ui/button";
 import {
     DrawerActionTrigger,
@@ -19,17 +20,26 @@ import { Canvas } from '@react-three/fiber';
 import Points from '../Points';
 import Stars from '../Stars';
 import Accordion from '../Accordion/Accordion';
+import DropDown from '../header/DropDown';
+import Link from 'next/link';
+import LightStars from '../LightStars/Stars';
 
-const SideDrawer = () => {
+
+const SideDrawer = (props) => {
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+    ;
+
     return (
         <HStack wrap="wrap">
             <For each={["start"]}>
                 {(placement) => (
-                    <DrawerRoot key={placement} placement={placement} size={'full'}>
+                    <DrawerRoot isOpen={isOpen} onClose={onClose} placement={placement} size={'full'}>
                         <DrawerBackdrop />
                         <DrawerTrigger asChild>
                             <div>
-                                <GiHamburgerMenu size={25} color="white" />
+                                <GiHamburgerMenu size={props.size} color="white" />
                             </div>
                         </DrawerTrigger>
                         <DrawerContent
@@ -39,19 +49,6 @@ const SideDrawer = () => {
                             roundedTop={placement === "bottom" ? "l3" : undefined}
                             roundedBottom={placement === "top" ? "l3" : undefined}
                         >
-                            {/* <Canvas gl={{ alpha: true }} style={{
-                                width: "100vw",
-                                height: "100vh",
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%",
-                                zIndex: 0,
-                            }}>
-
-                                <Stars />
-                            </Canvas> */}
                             <DrawerHeader>
                                 <Image
                                     className=''
@@ -62,13 +59,36 @@ const SideDrawer = () => {
                                 />
                             </DrawerHeader>
                             <DrawerBody>
-                                <div className='mt-12 '>
-                                    <Accordion />
+                                <div className='mt-12 z-[10]'>
+                                    <ul className='flex flex-col pt-2 text-md text-white'>
+                                        <DrawerCloseTrigger>
+                                            <li >
+                                                <Link href="/about" className='font-myfont uppercase [word-spacing:2px] text-lg' >A b o u t</Link>
+                                            </li>
+                                        </DrawerCloseTrigger>
+                                        <li className='mt-4'>
+                                            <Link href="/design" className='font-myfont uppercase [word-spacing:2px] text-lg' onClick={() => onClose()}>D e s i g n</Link>
+                                        </li>
+                                        <li className='mt-4'>
+                                            <Link href="/development" className='font-myfont uppercase [word-spacing:2px] text-lg' onClick={() => onClose()}>D e v e l o p m e n t</Link>
+                                        </li>
+                                        <li className='mt-4'>
+                                            <Link href="/marketing" className='font-myfont uppercase [word-spacing:2px] text-lg' onClick={() => onClose()}>M a r k e t i n g</Link>
+                                        </li>
+                                        <li className='mt-4'>
+                                            <Link href="/animation" className='font-myfont uppercase [word-spacing:2px] text-lg' onClick={() => onClose()}>A n i m a t i o n</Link>
+                                        </li>
+                                        <li className='mt-4'>
+                                            <Link href="/blog" className='font-myfont uppercase [word-spacing:2px] text-lg' onClick={() => onClose()}>B l o g</Link>
+                                        </li>
+                                        <li className='mt-4'>
+                                            <Link href="/contact" className='font-myfont uppercase [word-spacing:2px] text-lg' onClick={() => onClose()}>C o n t a c t</Link>
+                                        </li>
+                                    </ul>
+                                    <div className='border mt-5 border-gray-500 w-[90%] m-auto'></div>
                                 </div>
                             </DrawerBody>
-                            <DrawerFooter>
-
-                            </DrawerFooter>
+                            <DrawerFooter />
                             <DrawerCloseTrigger color='white' size={60} />
                         </DrawerContent>
                     </DrawerRoot>

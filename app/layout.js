@@ -6,6 +6,7 @@ import ProviderChakra from "./_components/ChakraProvider/ChakraProvider";
 import Scene2 from "./_components/ParticleCursors/Scene2";
 import { HeaderVisibilityProvider } from "@/context/HeaderVisibilityProvider ";
 import Loader from "./_components/Loader/Loader";
+import MegaMenu from "./_components/Ui/MegaMenu";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -103,8 +104,9 @@ export default function RootLayout({ children }) {
 
         <HeaderVisibilityProvider>
           <ProviderChakra>
-            <Header />
+            {/* <Header /> */}
             <Scene2>
+              <MegaMenu />
               {children}
             </Scene2>
           </ProviderChakra>

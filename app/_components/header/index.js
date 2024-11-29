@@ -68,13 +68,16 @@ const Header = ({ variant }) => {
                             />
                         </Link>
                     </div>
-                    <div className=''>
-                        <ul className='flex flex-row space-x-8 pt-2 h-full text-md text-white items-center'>
+                    <div className='border w-[60%]'>
+                        <ul className='flex flex-row space-x-8 pt-2 h-full text-md text-white w-full justify-center items-center'>
                             <li><Link href="/about" className='font-myfont uppercase [word-spacing:2px]'>A b o u t</Link></li>
-                            <li><DropDown service={"D e s i g n"} nestedServcies={designData} link={"/design"} /></li>
+                            <li><Link href="/" className='font-myfont uppercase [word-spacing:2px]'>S E R V I C E S</Link></li>
+                            {/* <li><Link href="/development" className='font-myfont uppercase [word-spacing:2px]'>D e v e l o p m e n t</Link></li>
+                            <li><Link href="/marketing" className='font-myfont uppercase [word-spacing:2px]'>M a r k e t i n g</Link></li> */}
+                            {/* <li><DropDown service={"D e s i g n"} nestedServcies={designData} link={"/design"} /></li>
                             <li><DropDown service={"D e v e l o p m e n t"} nestedServcies={designData} link={"/development"} /></li>
-                            <li><DropDown service={"M a r k e t i n g"} nestedServcies={designData} link={"/marketing"} /></li>
-                            <li><DropDown service={"A n i m a t i o n"} nestedServcies={designData} link={"/animation"} /></li>
+                            <li><DropDown service={"M a r k e t i n g"} nestedServcies={designData} link={"/marketing"} /></li> */}
+                            {/* <li><DropDown service={"A n i m a t i o n"} nestedServcies={designData} link={"/animation"} /></li> */}
                             {/* <li><DropDown service={"A I"} nestedServcies={designData} /></li> */}
                             <li><Link href="/blog" className='font-myfont uppercase [word-spacing:2px] '>B l o g</Link></li>
                             <li><Link href="/contact" className='font-myfont uppercase [word-spacing:2px] '>C o n t a c t</Link></li>
@@ -116,7 +119,7 @@ const Header = ({ variant }) => {
                             <IoIosCall color='white' size={18} />
                         </div></li>
                         <li> <div className='shadow__btn p-3 bg-black cursor-pointer'>
-                            <Dialog size={18} />
+                            <SideDrawer size={18} />
                         </div></li>
                     </ul>
                 </div>

@@ -10,6 +10,7 @@ import Section5 from '../Sections/AboutSections/Section5';
 import Footer from '../_components/Footer';
 import ScrollContext from '@/context/ScrollContext';
 import CommonSections from '../Sections/CommonSections/CommonSections';
+import PinSection from '../_components/CommonSection/PinSection/PinSection';
 export const metadata = {
     title: "About ",
 }
@@ -42,6 +43,7 @@ const Page = () => {
                     <Section3 />
                     <Section4 />
                     <Section5 />
+                    <PinSection/>
                     <CommonSections/>
                     <div className='bg-[#0A0A0A]'>
                         <Footer />
