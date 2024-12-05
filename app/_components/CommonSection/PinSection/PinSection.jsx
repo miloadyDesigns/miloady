@@ -7,44 +7,44 @@ import LoremIpsum from "react-lorem-ipsum";
 gsap.registerPlugin(ScrollTrigger);
 const items = [
     {
-        name: "Business Strategy",
+        name: "Ideate",
         bio: <LoremIpsum />,
         image: "https://i.pravatar.cc/150?u=a",
         topRated: true,
         num: "01/05",
-        description: "We dive deep into your brand’s identity, carefully analyzing your goals, target audience, and market trends. With this insight, we craft a strategic plan that aligns perfectly with your vision, ensuring a roadmap for lasting success."
+        description: "Create detailed system architectures, prototypes, and workflows to define the projects structure. Collaborate with designers and developers to ensure the systems scalability and usability. Develop database schemas and technical specifications as blueprints for development. Validate the design with stakeholders to ensure alignment with goals. A strong design phase reduces future rework."
     },
     {
-        name: "Brand Deployment",
+        name: "Project Planning",
         bio: <LoremIpsum />,
         image: "https://i.pravatar.cc/150?u=b",
         topRated: false,
         num: "02/05",
-        description: "From concept to execution, we transform your vision into reality with cutting-edge design and seamless development. We launch your product or service with precision, ensuring it stands out and shines in a competitive market."
+        description: "Develop a detailed project plan, including timelines, milestones, and resource allocation. Assign tasks to team members based on their expertise and availability. Create a communication strategy to ensure transparency among stakeholders. Identify potential risks and create mitigation strategies. This step lays the foundation for efficient execution."
     },
     {
-        name: "Market & Grow",
+        name: "Development",
         bio: <LoremIpsum />,
         image: "https://i.pravatar.cc/150?u=c",
         topRated: false,
         num: "03/05",
-        description: "With your brand in hand, we design and implement powerful marketing campaigns that capture attention and drive engagement. We ensure your brand grows steadily, unlocking its full potential and positioning it for continued success."
+        description: "Translate designs into functional code while following best practices and coding standards. Integrate various system components to build a cohesive product. Conduct iterative testing during development to identify and resolve issues early. Maintain clear documentation for code and processes. Collaboration and regular reviews ensure quality and progress."
     },
     {
-        name: "Maintanence & Support",
+        name: "Quality Testing",
         bio: <LoremIpsum />,
         image: "https://i.pravatar.cc/150?u=c",
         topRated: false,
         num: "04/05",
-        description: "Our Maintenance and Support services ensure your systems remain up-to-date, secure, and running smoothly long after the initial project is complete. We provide proactive monitoring, troubleshooting, and timely updates to prevent issues before they arise. Whether it's routine maintenance, performance optimization, or addressing urgent concerns, our dedicated support team is always ready to assist, ensuring your operations stay efficient and uninterrupted."
+        description: "Perform rigorous testing, including unit, integration, system, and user acceptance tests. Validate functionality, performance, and security to meet project requirements. Use automated and manual testing tools to ensure comprehensive coverage. Document identified bugs and resolve them systematically. This step ensures the product is reliable and user-ready."
     },
     {
-        name: "Brand Deployment",
+        name: "Deployment Support",
         bio: <LoremIpsum />,
         image: "https://i.pravatar.cc/150?u=b",
         topRated: false,
         num: "05/05",
-        description: "From concept to execution, we transform your vision into reality with cutting-edge design and seamless development. We launch your product or service with precision, ensuring it stands out and shines in a competitive market."
+        description: "Launch the system in the production environment, ensuring smooth implementation. Monitor system performance to address potential issues promptly. Provide post-launch support, including troubleshooting and user training. Implement updates and enhancements based on feedback. Ongoing support ensures the system’s success and longevity."
     },
 ]
 const PinSection = () => {
@@ -143,10 +143,10 @@ const PinSection = () => {
                         <img src="/process/process1.webp" alt="" className="mobilePhoto" />
 
                         <div className="pl-2 text-white w-full xs:text-[32px] md:text-[38px] mt-4">
-                            Business Strategy
+                            Ideate
                         </div>
                         <p className="pl-2 text-white font-sans xs:text-[14px] md:text-[18px] text-left">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                            Create detailed system architectures, prototypes, and workflows to define the projects structure. Collaborate with designers and developers to ensure the systems scalability and usability. Develop database schemas and technical specifications as blueprints for development. Validate the design with stakeholders to ensure alignment with goals. A strong design phase reduces future rework.
                         </p>
                     </div>
                 </div>
@@ -155,10 +155,10 @@ const PinSection = () => {
                         <img src="/process/process2.webp" alt="" className="mobilePhoto" />
 
                         <div className="pl-2 text-white w-full xs:text-[32px] md:text-[38px] mt-4">
-                            Business Strategy
+                            Project Planning
                         </div>
                         <p className="pl-2 text-white font-sans xs:text-[14px] md:text-[18px] text-left">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                            Develop a detailed project plan, including timelines, milestones, and resource allocation. Assign tasks to team members based on their expertise and availability. Create a communication strategy to ensure transparency among stakeholders. Identify potential risks and create mitigation strategies. This step lays the foundation for efficient execution.
                         </p>
                     </div>
                 </div>
@@ -167,10 +167,10 @@ const PinSection = () => {
                         <img src="/process/process3.webp" alt="" className="mobilePhoto" />
 
                         <div className="pl-2 text-white w-full xs:text-[32px] md:text-[38px] mt-4">
-                            Business Strategy
+                            Development
                         </div>
                         <p className="pl-2 text-white font-sans xs:text-[14px] md:text-[18px] text-left">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                            Translate designs into functional code while following best practices and coding standards. Integrate various system components to build a cohesive product. Conduct iterative testing during development to identify and resolve issues early. Maintain clear documentation for code and processes. Collaboration and regular reviews ensure quality and progress.
                         </p>
                     </div>
                 </div>
@@ -179,10 +179,10 @@ const PinSection = () => {
                         <img src="/process/process4.webp" alt="" className="mobilePhoto" />
 
                         <div className="pl-2 text-white w-full xs:text-[32px] md:text-[38px] mt-4">
-                            Business Strategy
+                            Quality Testing
                         </div>
                         <p className="pl-2 text-white font-sans xs:text-[14px] md:text-[18px] text-left">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                            Perform rigorous testing, including unit, integration, system, and user acceptance tests. Validate functionality, performance, and security to meet project requirements. Use automated and manual testing tools to ensure comprehensive coverage. Document identified bugs and resolve them systematically. This step ensures the product is reliable and user-ready.
                         </p>
                     </div>
                 </div>
@@ -191,10 +191,10 @@ const PinSection = () => {
                         <img src="/process/process5.webp" alt="" className="mobilePhoto" />
 
                         <div className="pl-2 text-white w-full xs:text-[32px] md:text-[38px] mt-4">
-                            Business Strategy
+                            Deployment Support
                         </div>
                         <p className="pl-2 text-white font-sans xs:text-[14px] md:text-[18px] text-left">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                            Launch the system in the production environment, ensuring smooth implementation. Monitor system performance to address potential issues promptly. Provide post-launch support, including troubleshooting and user training. Implement updates and enhancements based on feedback. Ongoing support ensures the system’s success and longevity.
                         </p>
                     </div>
                 </div>
