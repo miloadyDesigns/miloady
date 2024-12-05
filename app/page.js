@@ -373,10 +373,10 @@ export default function Home() {
             <Section5 />
             <div className='w-screen mb-[10%]'>
               <div className="w-[80%] m-auto">
-                <h1 className="text-white text-[52px] font-bold font-pp">Technologies we use.</h1>
-                <p className="text-white mt-4 text-2xl w-[50%]">Hire from our pool of 350+ specialized experts in web, mobile, and software engineering, specializing in the latest technologies and frameworks, ready to scale your development teams effortlessly.</p>
-                <div className="border h-[70vh] border-l-0 border-b-0 border-r-0 border-t-2 border-gray-600 mt-8 flex flex-row">
-                  <div className="w-[25%] p-2 flex flex-col  items-center mt-4">
+                <h1 className="text-white xs:text-[24px] lg:text-[52px] font-bold font-pp  xs:text-center lg:text-left">Technologies we use.</h1>
+                <p className="text-white mt-4 xs:text-[16px] lg:text-2xl xs:w-[100%] lg:w-[50%] xs:text-center lg:text-left">Hire from our pool of 350+ specialized experts in web, mobile, and software engineering, specializing in the latest technologies and frameworks, ready to scale your development teams effortlessly.</p>
+                <div className="border h-[70vh] border-l-0 border-b-0 border-r-0 border-t-2 border-gray-600 mt-8 flex flex-row xs:hidden lg:flex">
+                  <div className="w-[25%] p-2 flex xs:flex-row lg:flex-col  items-center mt-4 xs:hidden lg:flex">
                     <div onClick={() => handleCategorySelect('WebApps')} className={`${selectedCategory == "WebApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[20px] w-[250px] border border-gray-600 text-center rounded-full cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
                       Web Platforms
                     </div>
@@ -399,12 +399,44 @@ export default function Home() {
                       Animation
                     </div>
                   </div>
-                  <div className="w-[70%] border pl-2 border-t-0 border-l-1 border-b-0 border-r-0 border-gray-600 ">
+
+                  <div className="w-[70%] border pl-2 border-t-0 border-l-1 border-b-0 border-r-0 border-gray-600 xs:hidden lg:block">
                     {selectedCategory === 'MobileApps' && <MobileApps />}
                     {selectedCategory === 'WebApps' && <WebApps />}
                     {selectedCategory === 'Database' && <Database />}
                     {selectedCategory === 'DevopsCloud' && <DevopsCloud />}
                   </div>
+                </div>
+              </div>
+              <div className="w-screen  ">
+                <div className="w-[100%] p-2 flex flex-row gap-2 justify-start items-center mt-4 lg:hidden xs:flex  overflow-x-auto " style={{ minHeight: "100px" }}>
+                  <div onClick={() => handleCategorySelect('WebApps')} className={`${selectedCategory == "WebApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px] w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full  cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Web Platforms
+                  </div>
+                  <div onClick={() => handleCategorySelect('MobileApps')} className={`${selectedCategory == "MobileApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px]  w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full cursor-pointer  transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Mobile Apps
+                  </div>
+                  <div onClick={() => handleCategorySelect('Database')} className={`${selectedCategory == "Database" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px]  w-[250px] border border-gray-600 text-center rounded-full whitespace-nowrap cursor-pointer  transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Database
+                  </div>
+                  <div onClick={() => handleCategorySelect('DevopsCloud')} className={`${selectedCategory == "DevopsCloud" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px]  w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full  cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Cloud & DevOps
+                  </div>
+                  <div onClick={() => handleCategorySelect('Graphic Design')} className={`${selectedCategory == "Graphic Design" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px]  w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Graphic Design
+                  </div>
+                  <div onClick={() => handleCategorySelect('Marketing')} className={`${selectedCategory == "Marketing" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px]  w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full  cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Marketing
+                  </div>
+                  <div onClick={() => handleCategorySelect('Animation')} className={`${selectedCategory == "Animation" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px]  w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
+                    Animation
+                  </div>
+                </div>
+                <div className="w-[70%] border pl-2 border-t-0 border-l-1 border-b-0 border-r-0 border-gray-600 xs:block lg:hidden">
+                  {selectedCategory === 'MobileApps' && <MobileApps />}
+                  {selectedCategory === 'WebApps' && <WebApps />}
+                  {selectedCategory === 'Database' && <Database />}
+                  {selectedCategory === 'DevopsCloud' && <DevopsCloud />}
                 </div>
               </div>
             </div>

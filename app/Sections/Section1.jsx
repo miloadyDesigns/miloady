@@ -53,6 +53,7 @@ const Section1 = () => {
             </section>
             {/* Overlay */}
             <div
+                className='xs:hidden lg:block'
                 style={{
                     position: "absolute",
                     top: 0,
@@ -64,14 +65,35 @@ const Section1 = () => {
                 }}
             >
                 <Image
+                    className='xs:hidden lg:block'
                     src="/image.png"
                     alt="Galaxy Background"
                     layout="fill" // Makes the image cover the entire container
                     objectFit="cover" // Ensures the image maintains its aspect ratio while covering the area
                 />
             </div>
+            <div
+                className='xs:block lg:hidden'
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "rgba(0, 0, 0, 0.65)",
+                    zIndex: 0,
+                }}
+            >
+                <Image
+                    className='xs:block lg:hidden'
+                    src="/6.jpg"
+                    alt="Galaxy Background"
+                    layout="fill" // Makes the image cover the entire container
+                    objectFit="cover" // Ensures the image maintains its aspect ratio while covering the area
+                />
+            </div>
 
-            <div className="overlay" style={{
+            <div className="overlay " style={{
                 position: "absolute",
                 top: 0,
                 left: 0,
@@ -81,7 +103,7 @@ const Section1 = () => {
                 zIndex: 4,
             }}></div>
             {/* Canvas */}
-            <Canvas gl={{ alpha: true }} style={{
+            <Canvas gl={{ alpha: true }} className='xs:hidden lg:block' style={{
                 width: "100vw",
                 height: "100vh",
                 zIndex: 1,
