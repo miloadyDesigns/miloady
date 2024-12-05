@@ -101,7 +101,7 @@ const Section4 = () => {
                                 <h2 className='text-white font-bold text-2xl mt-4'>Scalability and Performance</h2>
                                 <p className='text-white text-lg'>Custom systems are designed to grow with your business, seamlessly handling increased traffic and expanding functionalities as needed. This scalability ensures your operations remain efficient, even as demands rise.</p>
                                 <h2 className='text-white font-bold text-2xl mt-4'>Brand Differentiation</h2>
-                                <p className='text-white text-lg'>A bespoke development solution allows you to stand out with a unique platform tailored to your brand's identity. This differentiation enhances your credibility and builds stronger connections with your target audience.</p>
+                                <p className='text-white text-lg'>A bespoke development solution allows you to stand out with a unique platform tailored to your brands identity. This differentiation enhances your credibility and builds stronger connections with your target audience.</p>
                                 {/* <p className='text-white text-lg mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti ullam magni, iusto quos quam odio necessitatibus ratione culpa quisquam odit maiores rerum, rem excepturi aliquid modi sequi praesentium enim exercitationem animi amet. Aspernatur quia suscipit voluptatem rem, commodi distinctio eius non cupiditate, aut sit debitis, nisi vero. Dicta, deleniti?</p> */}
                             </div>
                         </div>
