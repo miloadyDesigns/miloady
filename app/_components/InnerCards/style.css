@@ -19,14 +19,14 @@
 
 @media (max-width: 500px) {
   .swiper_container {
-    height: 47rem;
+    height: 44rem;
   }
   .swiper-slide {
-    width: 28rem !important;
+    width: 24rem !important;
     height: 36rem !important;
   }
   .swiper-slide img {
-    width: 28rem !important;
+    width: 24rem !important;
     height: 36rem !important;
   }
 }

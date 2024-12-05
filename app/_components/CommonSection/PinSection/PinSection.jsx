@@ -104,12 +104,12 @@ const PinSection = () => {
     return (
         <>
             {/* <div className="spacer"></div> */}
-            <div className="process_head xl:w-[30%] xs:w-[90%] lg:w-[40%] text-white ml-[5%]">
+            <div className="process_head xl:w-[50%] xs:w-[90%] lg:w-[40%] text-white ml-[7%]">
                 <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">Our Seamless Process</p>
                 <h1 className="text-while font-pp lg:text-[60px] xl:text-[60px] xs:text-[38px] leading-none">From Vision to Success</h1>
                 {/* <p className="text-white p-1 font-text xs:text-[14px] lg:text-[18px]">Transforming your ideas into reality with strategic planning, innovative solutions, and relentless execution. We take your concept and turn it into a tangible success, every step driven by creativity, precision, and a deep understanding of your goals.</p> */}
             </div>
-            <div className="gallery lg:mb-[10%]" ref={galleryRef}>
+            <div className="gallery" ref={galleryRef}>
                 <div className="left">
                     <div className="desktopContent text-white">
                         {items.map((item, index) => (
@@ -133,19 +133,73 @@ const PinSection = () => {
                         <img src="/process/process3.webp" alt="" className="desktopPhoto" />
                         <img src="/process/process4.webp" alt="" className="desktopPhoto" />
                         <img src="/process/process5.webp" alt="" className="desktopPhoto" />
-                        {/* <div className="desktopPhoto red"></div>
-                        <div className="desktopPhoto green"></div>
-                        <div className="desktopPhoto pink"></div>
-                        <div className="desktopPhoto blue"></div>
-                        <div className="desktopPhoto cyan"></div> */}
+                    </div>
+                </div>
+
+            </div>
+            <div className="lg:hidden xs:flex gap-12 flex-nowrap mt-4 mb-[10%] overflow-x-auto w-screen custom-scrollbar">
+                <div style={{ minWidth: "100vw" }}>
+                    <div className=" p-3 flex flex-col justify-center items-center ">
+                        <img src="/process/process1.webp" alt="" className="mobilePhoto" />
+
+                        <div className="pl-2 text-white w-full text-[32px] mt-4">
+                            Business Strategy
+                        </div>
+                        <p className="pl-2 text-white font-sans text-[14px] text-left">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                        </p>
+                    </div>
+                </div>
+                <div style={{ minWidth: "100vw" }}>
+                    <div className=" p-3 flex flex-col justify-center items-center ">
+                        <img src="/process/process2.webp" alt="" className="mobilePhoto" />
+
+                        <div className="pl-2 text-white w-full text-[32px] mt-4">
+                            Business Strategy
+                        </div>
+                        <p className="pl-2 text-white font-sans text-[14px] text-left">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                        </p>
+                    </div>
+                </div>
+                <div style={{ minWidth: "100vw" }}>
+                    <div className=" p-3 flex flex-col justify-center items-center ">
+                        <img src="/process/process3.webp" alt="" className="mobilePhoto" />
+
+                        <div className="pl-2 text-white w-full text-[32px] mt-4">
+                            Business Strategy
+                        </div>
+                        <p className="pl-2 text-white font-sans text-[14px] text-left">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                        </p>
+                    </div>
+                </div>
+                <div style={{ minWidth: "100vw" }}>
+                    <div className=" p-3 flex flex-col justify-center items-center ">
+                        <img src="/process/process4.webp" alt="" className="mobilePhoto" />
+
+                        <div className="pl-2 text-white w-full text-[32px] mt-4">
+                            Business Strategy
+                        </div>
+                        <p className="pl-2 text-white font-sans text-[14px] text-left">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                        </p>
+                    </div>
+                </div>
+                <div style={{ minWidth: "100vw" }}>
+                    <div className=" p-3 flex flex-col justify-center items-center ">
+                        <img src="/process/process5.webp" alt="" className="mobilePhoto" />
+
+                        <div className="pl-2 text-white w-full text-[32px] mt-4">
+                            Business Strategy
+                        </div>
+                        <p className="pl-2 text-white font-sans text-[14px] text-left">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur odit. Tempora totam eligendi ad sapiente fugit et officiis repellat ipsa nihil amet? Id quas odit itaque corrupti earum saepe alias illum labore ratione, odio non minus? Qui, sapiente architecto.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            {/* <div className="spacer"></div>
-            <div className="spacer"></div>
-            <div className="spacer"></div>
-            <div className="spacer bg-red-600"></div> */}
         </>
     );
 };

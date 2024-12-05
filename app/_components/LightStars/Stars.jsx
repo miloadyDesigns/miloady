@@ -54,7 +54,7 @@ const LightStars = () => {
 
     return (
         <div>
-            <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full z-[1]"></canvas>
+            <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full z-[0]"></canvas>
         </div>
     );
 };

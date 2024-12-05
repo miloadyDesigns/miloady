@@ -57,8 +57,8 @@ const ServiceCard = ({ title, description, image, subheading }) => (
         <div className='lg:w-[50%] xs:w-[90%]'>
             <div className='flex flex-col justify-center h-full'>
                 <div className='bg-[#1B1D21] text-[#F87171] xs:w-[90%] xl:w-[140px] p-4 text-center rounded-lg ml-4 xs:text-[14px] lg:text-[16px] xs:mt-3 lg:mt-0 hidden'>Service</div>
-                <h1 className='text-white ml-4 xs:text-[25px] font-bold lg:text-[50px] xl:text-[65px] leading-tight'>{title}</h1>
-                <p className='text-white ml-4 font-text xs:text-[14px] lg:text-xl lg:w-[80%]'>{description}</p>
+                <h1 className='text-white ml-4 xs:text-[25px] font-bold lg:text-[50px] xl:text-[65px] leading-none'>{title}</h1>
+                <p className='text-white ml-4 font-text xs:text-[14px] lg:text-xl lg:w-[80%] mt-4'>{description}</p>
                 {/* <div className='flex ml-4 mt-4 space-x-2 items-center xs:hidden lg:flex'>
                     <h1 className='font-text text-white cursor-pointer'>L E A R N &nbsp; M O R E</h1>
                     <div className='bg-[#1B1D21] p-2 rounded-full cursor-pointer'>
@@ -118,29 +118,26 @@ const Services = () => {
 
     return (
         <Swiper
-            className='h-full'
-            spaceBetween={50}
-            slidesPerView={1}
+            className='h-full '
+            spaceBetween={30} // You can adjust this to change the space between slides
+            slidesPerView={1.3} // This will make the center slide larger, and the side slides smaller
             loop={true} // Enable infinite loop
-            autoplay={{
-                delay: 0.4, // No delay for continuous scrolling
-                // Speed of scrolling
-                disableOnInteraction: false,// Prevent autoplay from disabling on interaction
-            }}
-            speed={5000}
-            // modules={[Autoplay]}
+            speed={500}
+            centeredSlides={true} // Ensures the center slide is in the middle
+            centerMode={true}
+            autoplay={true}
+            
             breakpoints={{
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.3, // More space for smaller screens
                 },
                 768: {
-                    slidesPerView: 1, // Slightly more on medium screens
+                    slidesPerView: 1.3, // Slightly more on medium screens
                 },
                 1024: {
-                    slidesPerView: 1, // More on larger screens
+                    slidesPerView: 1.3, // More on larger screens to show 0.2% of adjacent slides
                 },
             }}
-
         >
             {servicesData.map((service, index) => (
                 <SwiperSlide key={index}>
@@ -153,6 +150,7 @@ const Services = () => {
                 </SwiperSlide>
             ))}
         </Swiper>
+
     );
 };
 

@@ -10,29 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./style.css"
 gsap.registerPlugin(gsap, ScrollTrigger)
 const TestimonailSection = () => {
-    // useGSAP(() => {
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: ".testimonialSection",
-    //             start: "top center",
-    //             end: "bottom bottom",
-    //             scrub: 3,
-    //             scroller: ".wrapper",
-    //             toggleActions: "restart pause resume pause",
-    //         }
-    //     })
-    //     tl.from('.testimonialHead', {
-    //         x: -600,
-    //         opacity: 0,
-    //         ease: "power1.inOut",
-    //         duration: 1
-    //     }).from('.testimonialSwiper', {
-    //         x: 1200,
-    //         opacity: 0,
-    //         ease: "power1.inOut",
-    //         duration: 1
-    //     }, "<")
-    // })
+
 
     const SampleNextArrow = (props) => {
         const { onClick } = props;
@@ -58,46 +36,20 @@ const TestimonailSection = () => {
     };
     const settings = {
         speed: 500,
-        slidesToShow: 2, // Show 3 testimonials at a time
+        slidesToShow: 4,
         slidesToScroll: 1,
-        centerPadding: '0px',
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        initialSlide: 0,
         responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '10px', // Adjust for smaller screens
-                },
-            },
-            {
-                breakpoint: 1440,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '10px', // Adjust for smaller screens
-                },
-            },
-            {
-                breakpoint: 1520,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '10px', // Adjust for smaller screens
-                },
-            },
+
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 1.01,
+                    slidesToShow: 1.06,
                     slidesToScroll: 1,
                     centerMode: true,
-                    centerPadding: '0', // Adjust for smaller screens
+                    centerPadding: '20px', // Adjust for smaller screens
                 },
             },
         ],
@@ -106,14 +58,14 @@ const TestimonailSection = () => {
     return (
 
 
-        <section className=' w-[100vw]  z-[100]' >
-            {/* <div className='moving_text_wrap '>
+        <section className='w-[100vw]  z-[100]' >
+            <div className='moving_text_wrap '>
                 <div className='moving_text_in'>
                     <div className='moving_text'>CRAFTING EXPERIENCES THAT MATTER.</div>
                     <div className='moving_text'>CRAFTING EXPERIENCES THAT MATTER.</div>
                 </div>
-            </div> */}
-            <div className=' flex lg:flex-row xs:flex-col left-0 h-[85%] z-10 items-center justify-around testimonialSection'>
+            </div>
+            <div className=' flex xs:flex-col left-0  z-10 items-center justify-around testimonialSection'>
                 <div className="testimonialHead text-white  ml-[8%]  xs:w-[100%] lg:w-[40%] xl:w-[40%]  ">
                     <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">What Our Clients Say</p>
                     <h1 className="text-while font-pp lg:text-[50px] xl:text-[66px] xs:text-[38px] -mt-2">Our Testimonials</h1>
@@ -121,8 +73,8 @@ const TestimonailSection = () => {
                         Read their stories and see the impact of our work in their own words.</p>
                     {/* <SideButton title={"L&nbsp;&nbsp;E&nbsp;&nbsp;A&nbsp;&nbsp;R&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;O&nbsp;R&nbsp;&nbsp;E"} margin={"ml-2"} /> */}
                 </div>
-                <div className="xs:w-[100%] lg:w-[58%] xl:w-[50%] 2xl:w-[60%] testimonialSwiper xs:mt-12 lg:mt-0">
-                    <Slider {...settings} className='lg:pl-24 xs:pl-0'>
+                <div className="xs:w-[100%] lg:w-[100%] testimonialSwiper xs:mt-12 lg:mt-6">
+                    <Slider {...settings} className='lg:px-12 '>
                         <Testimonials gradient1={"rgba(211, 211, 211, 0)"} gradient2={"rgba(16, 55, 92, 0.8)"} description={"Partnering with Miloady Designs was a fantastic choice for our business. The team understood our goals and provided insights that truly elevated our project. Their work beautifully combined creativity with functionality, which was exactly what we needed. We couldn’t be happier with the results!"} name={"Davia Clements"} designation={"CEO of Kodak Movement"} image={"https://res.cloudinary.com/dz8sirg5s/image/upload/v1730924090/images/ki1w2teuhrvd9hwnmq8x.png"} star={5} />
                         <Testimonials gradient1={"rgba(211, 211, 211, 0)"} gradient2={"rgba(106, 156, 137, 1)"} description={"MLD turned our vision into a reality that exceeded all expectations. Their team has an incredible eye for detail and a deep understanding of design. Every step of the process felt seamless, and they were always there to answer our questions. I’d recommend them to anyone looking for top-notch service and creativity!"} name={"Roy Vollmer"} designation={"CEO of Vollmer Design Studio"} image={"https://res.cloudinary.com/dz8sirg5s/image/upload/v1730924088/images/d0op8byumvnrk47lq12t.png"} star={5} />
                         <Testimonials gradient1={"rgba(211, 211, 211, 0)"} gradient2={"rgba(85, 124, 86, 1)"} description={"The team at Miloady Designs brought so much passion and skill to our project. They didn’t just meet our expectations, they raised the bar. Their responsiveness and dedication were evident from start to finish. We’re beyond pleased with the outcome and can’t wait to work with them again."} name={"Sarah Page"} designation={"CEO of Estero Club"} image={"https://res.cloudinary.com/dz8sirg5s/image/upload/v1730924088/images/woymjb67e6orpa6inze6.png"} star={5} />

@@ -1,7 +1,7 @@
 'use client'
 
 import { Tabs } from "@chakra-ui/react"
-import { Suspense, useRef } from "react";
+import { Suspense, useRef, useState } from "react";
 import Portfolio from "../portfolio";
 const websites = [
     {
@@ -304,87 +304,57 @@ const branding = [
 ];
 
 const Section3 = () => {
+    const [selectedItem, setSelectedItem] = useState('Websites')
     const sliderRef = useRef()
+    const selectedItemHandler = (selectedItem) => {
+        setSelectedItem(selectedItem)
+    }
     return (
-        <div className="relative  section_three xs:h-[70vh] lg:h-[80vh] xs:mb-[10%] lg:mb-[10%]">
-            <section className=" w-full  flex flex-col lg:h-[85%] xs:h-[90%] z-10">
+        <div className="relative  section_three  xs:mb-[10%] lg:mb-[5%]">
+            <section className="w-full z-10">
                 <div className="portfolioSection text-white xs:ml-[8%] lg:ml-[7%] 2xl:ml-[8%] xl:ml-[7%]  lg:w-[50%] 2xl:w-[30%] xs:w-[90%]">
                     <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">Empowering the world through our technlogies</p>
                     <h1 className="text-while font-pp lg:text-[66px] xs:text-[38px] -mt-2">Our Portfolio</h1>
                     <p className="text-white lg:hidden p-1 font-text xs:text-[14px] lg:text-lg">Explore our diverse portfolio showcasing innovative projects and successful collaborations across various industries. See how we bring creative ideas to life with precision and excellence.</p>
                 </div>
-                <div className="portfolio-swiper xs:mt-12 lg:mt-0">
-                    <div className="mt-2">
-                        <Tabs.Root defaultValue="Websites" variant="line" className="bg-transparent text-white  relative" style={{ "--tab-line-color": "#FF5733" }}>
-                            <div className="flex">
-                                <Tabs.List
-                                    className="flex xs:space-x-4 lg:space-x-0 lg:ml-[7%] xl:ml-[8%] relative overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-700"
-                                >
-                                    {/* Logo Tab */}
-                                    <Tabs.Trigger
-                                        value="Logo"
-                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                                    >
-                                        Graphics
-                                    </Tabs.Trigger>
-                                    <Tabs.Trigger
-                                        value="Branding"
-                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                                    >
-                                        Branding
-                                    </Tabs.Trigger>
-                                    {/* Websites Tab */}
-                                    <Tabs.Trigger
-                                        value="Websites"
-                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                                    >
-                                        Websites
-                                    </Tabs.Trigger>
-                                    <Tabs.Trigger
-                                        value="Social Media"
-                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                                    >
-                                        Social Media
-                                    </Tabs.Trigger>
-                                    {/* Mobile Apps Tab */}
-                                    <Tabs.Trigger
-                                        value="Mobile Apps"
-                                        className="flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300"
-                                    >
-                                        Mobile Apps
-                                    </Tabs.Trigger>
-                                </Tabs.List>
-                            </div>
 
-                            {/* Tabs Content */}
-                            <Tabs.Content value="Websites">
-                                <Suspense fallback={<h1>Loading..</h1>}>
-                                    <Portfolio data={websites} ref={sliderRef} />
-                                </Suspense>
-                            </Tabs.Content>
-                            <Tabs.Content value="Branding">
-                                <Suspense fallback={<h1>Loading..</h1>}>
-                                    <Portfolio data={branding} ref={sliderRef} />
-                                </Suspense>
-                            </Tabs.Content>
-                            <Tabs.Content value="Mobile Apps">
-                                <Suspense fallback={<h1>Loading..</h1>}>
-                                    <Portfolio data={mobileApps} ref={sliderRef} />
-                                </Suspense>
-                            </Tabs.Content>
-                            <Tabs.Content value="Social Media">
-                                <Suspense fallback={<h1>Loading..</h1>}>
-                                    <Portfolio data={socialMedia} ref={sliderRef} />
-                                </Suspense>
-                            </Tabs.Content>
-                            <Tabs.Content value="Logo">
-                                <Suspense fallback={<h1>Loading..</h1>}>
-                                    <Portfolio data={logos} ref={sliderRef} />
-                                </Suspense>
-                            </Tabs.Content>
-                        </Tabs.Root>
+                <div className="w-full">
+                    <div className="flex gap-3 justify-start items-center pl-4 sm:pl-[8%] overflow-x-auto scrollbar-hide">
+                        <div onClick={() => selectedItemHandler('Graphics')} className="p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300 text-white whitespace-nowrap">
+                            Graphics
+                        </div>
+                        <div onClick={() => selectedItemHandler('Websites')} className="p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300 text-white whitespace-nowrap">
+                            Websites
+                        </div>
+                        <div onClick={() => selectedItemHandler('Mobile Apps')} className="p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300 text-white whitespace-nowrap">
+                            Mobile Apps
+                        </div>
+                        <div onClick={() => selectedItemHandler('Social Media')} className="p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300 text-white whitespace-nowrap">
+                            Social Media
+                        </div>
+                        <div onClick={() => selectedItemHandler('Branding')} className="p-2 rounded-lg cursor-pointer hover:bg-gray-700 transition-all ease-in-out duration-300 text-white whitespace-nowrap">
+                            Branding
+                        </div>
+                    </div>
+                    <div className="mt-2">
+                        {selectedItem == 'Graphics' &&
+                            <Portfolio data={logos} ref={sliderRef} />
+                        }
+                        {selectedItem == 'Websites' &&
+                            <Portfolio data={websites} ref={sliderRef} />
+                        }
+                        {selectedItem == 'Mobile Apps' &&
+                            <Portfolio data={mobileApps} ref={sliderRef} />
+                        }
+                        {selectedItem == 'Social Media' &&
+                            <Portfolio data={socialMedia} ref={sliderRef} />
+                        }
+                        {selectedItem == 'Branding' &&
+                            <Portfolio data={branding} ref={sliderRef} />
+                        }
                     </div>
                 </div>
+
 
             </section>
         </div>

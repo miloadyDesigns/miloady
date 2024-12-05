@@ -1,76 +1,72 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
-import { GrFormNextLink } from 'react-icons/gr';
+import { GrFormNextLink, GrFormPreviousLink } from 'react-icons/gr';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Portfolio = ({ data, ref }) => {
+const Portfolio = ({ data }) => {
     const sliderRef = useRef(null);
+
+    const NextArrow = ({ onClick }) => (
+        <div
+            className="xs:hidden lg:flex flex justify-center items-center absolute border border-gray-500 w-[80px] -top-16 right-6 z-10 cursor-pointer bg-opacity-80 p-2 rounded-lg"
+            onClick={onClick}
+        >
+            <GrFormNextLink size={24} className="text-white" />
+        </div>
+    );
+
+    const PrevArrow = ({ onClick }) => (
+        <div
+            className="xs:hidden lg:flex flex justify-center items-center absolute border border-gray-500 w-[80px] -top-16 right-[120px] z-10 cursor-pointer  bg-opacity-80 p-2 rounded-lg"
+            onClick={onClick}
+        >
+            <GrFormPreviousLink size={24} className="text-white" />
+        </div>
+    );
+
     const settings = {
-        className: 'center',
-        centerMode: true,
         infinite: true,
-        centerPadding: '0',
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 4000,
+        speed: 1000,
+        autoplaySpeed: 3000,
         cssEase: "linear",
-        // dots: true,
         swipeToSlide: true,
-        arrows: false,
-
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    centerPadding: '0',
                 },
             },
         ],
     };
 
     return (
-        <div className='p-2'>
-            <Slider ref={ref} {...settings}>
+        <div className="p-2 relative">
+            <Slider ref={sliderRef} {...settings}>
                 {data.map((iteme, index) => (
-                    <div key={index} className='lg:px-4 xs:px-2 rounded-lg'>
-                        <div className='relative  xs:w-[100%] lg:w-[100%] rounded-lg border  border-gray-500 '>
-                            <div className='bg-black bg-opacity-40 backdrop-blur-2xl rounded-lg w-full h-full shadow-md'>
-                                <div className="xs:hidden lg:block ">
+                    <div key={index} className="lg:px-4 xs:px-2 rounded-lg">
+                        <div className="relative xs:w-[100%] lg:w-[100%] rounded-lg border border-gray-500 h-[50vh]">
+                            <div className="relative w-full h-full rounded-lg">
+                                <div className="absolute inset-0">
                                     <Image
                                         src={iteme.image}
-                                        width={400}
-                                        height={400}
-                                        className='object-cover w-full rounded-lg'
+                                        layout="fill"
+                                        className="object-contain rounded-lg"
                                         alt="Portfolio Image"
                                     />
                                 </div>
-                                <div className="xs:block lg:hidden ">
-                                    <Image
-                                        src={iteme.image}
-                                        width={400}
-                                        height={400}
-                                        className='object-contain w-full   rounded-lg'
-                                        alt="Portfolio Image"
-                                    />
-                                </div>
-                                <div className='p-2'>
-                                    <h1 className='text-white xs:text-2xl lg:text-3xl p-2 font-poppins font-bold'>{iteme.title}</h1>
-                                    {/* <p className='text-gray-300 font-text pl-2'>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia porro alias autem nemo ipsam tenetur excepturi omnis, inventore, consequuntur!
-                                    </p> */}
-                                    <div className='flex ml-4 mt-4 space-x-2 items-center'>
-                                        {/* <h1 className='font-text text-white cursor-pointer hover:text-red-500 transition-all'>
-                                            L E A R N &nbsp; M O R E
-                                        </h1> */}
-                                        {/* <div className='bg-[#1B1D21] p-2 rounded-full cursor-pointer'>
-                                            <GrFormNextLink color='white' />
-                                        </div> */}
-                                    </div>
+                                <div className="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-60 rounded-b-lg">
+                                    <h1 className="text-white xs:text-2xl lg:text-3xl font-poppins font-bold text-center">
+                                        {iteme.title}
+                                    </h1>
                                 </div>
                             </div>
                         </div>
