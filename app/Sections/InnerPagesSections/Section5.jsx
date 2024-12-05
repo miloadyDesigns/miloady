@@ -61,7 +61,7 @@ const Section5 = ({ title, description, item1, item2, item3, item4, item5, item6
                     </div>
                 </div>
                 <div className="w-[10%] mt-8 rounded-3xl p-3 bg-[#70000E] cursor-pointer xs:hidden lg:block">
-                    <h1 className="text-center text-white">Let's Discuss</h1>
+                    <h1 className="text-center text-white">Let&apos;s Discuss</h1>
                 </div>
             </div>
         </div>

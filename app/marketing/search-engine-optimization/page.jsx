@@ -255,7 +255,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className="w-[10%] mt-8 rounded-3xl p-3 bg-[#70000E] cursor-pointer">
-                                <h1 className="text-center text-white">Let's Discuss</h1>
+                                <h1 className="text-center text-white">Let&apos;s Discuss</h1>
                             </div>
                         </div>
                     </div>

@@ -18,6 +18,7 @@ const Section4 = () => {
                         <p className='text-[14px] pt-4 text-gray-400'>
                             At Milaody Design, we pride ourselves on achieving key milestones that demonstrate our commitment to excellence. From delivering custom solutions to driving measurable business growth for our clients, each milestone reflects our dedication to quality and innovation. Whether it&apos;s launching a successful website, achieving top rankings through SEO, or running high-performing marketing campaigns, we continuously strive to exceed expectations. Our journey is defined by the success stories of our clients, and we are excited to continue reaching new heights together.
                         </p>
+
                         <div className='mt-6 flex justify-around flex-wrap pb-4'>
                             <div>
                                 <h1 className='text-white xs:text-[42px] lg:text-[52px] font-bold'>
