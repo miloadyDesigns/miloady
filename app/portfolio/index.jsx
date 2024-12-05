@@ -53,7 +53,7 @@ const Portfolio = ({ data }) => {
             <Slider ref={sliderRef} {...settings}>
                 {data.map((iteme, index) => (
                     <div key={index} className="lg:px-4 xs:px-2 rounded-lg">
-                        <div className="relative xs:w-[100%] lg:w-[100%] rounded-lg border border-gray-500 xs:h-[30vh] lg:h-[50vh]">
+                        <div className="relative xs:w-[100%] lg:w-[100%] rounded-lg border border-gray-500 xs:h-[30vh] md:h-[40vh]  xl:h-[50vh]">
                             <div className="relative w-full h-full rounded-lg">
                                 <div className="absolute inset-0">
                                     <Image

@@ -497,8 +497,24 @@ body {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-width: 460px) {
+  .mobilePhoto {
+    width: 60vw;
+    height: 70vw;
+
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .mobilePhoto {
+    width: 40vw;
+    height: 45vw;
+  }
+}
+
+
 /* defines styles for screens up to 599px wide */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1020px) {
   .left {
     display: none;
   }

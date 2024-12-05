@@ -53,12 +53,12 @@ const servicesData = [
 
 
 const ServiceCard = ({ title, description, image, subheading }) => (
-    <div className='h-full flex xs:flex-col lg:flex-row xs:space-y-2 lg:space-x-12  xs:items-center lg:ml-[10%] '>
-        <div className='lg:w-[50%] xs:w-[100%] '>
+    <div className='h-full flex xs:flex-col lg:flex-row xs:space-y-2 lg:space-x-12  xs:items-center'>
+        <div className='lg:w-[50%] xs:w-[100%] md:w-[90%] '>
             <div className='flex flex-col justify-center h-full'>
-                <h1 className='text-white ml-4 xs:text-[30px] font-bold lg:text-[50px]  leading-none'>{title}</h1>
-                <p className='text-white ml-4 font-text xs:text-[17px] lg:text-xl lg:w-[80%] mt-4'>{description}</p>
-                
+                <h1 className='text-white ml-4 xs:text-[30px] md:text-[38px] lg:text-[33px] font-bold xl:text-[50px]   leading-none'>{title}</h1>
+                <p className='text-white ml-4 font-text xs:text-[17px] md:text-[22px] lg:text-[17px] xl:text-xl lg:w-[80%] mt-4'>{description}</p>
+
             </div>
         </div>
         <div className='w-[90%] xs:block lg:hidden flex-col items-center justify-center'>
@@ -124,13 +124,18 @@ const Services = () => {
                 },
                 // On medium screens (768px)
                 768: {
-                    slidesPerView: 1, // Show 1 slide (you can increase for wider screens)
+                    slidesPerView: 1.6,
+                    centeredSlides: true 
                 },
                 // On larger screens (1024px)
                 1024: {
-                    slidesPerView: 1.3, // Show 1.3 slides for larger screens
+                    slidesPerView: 1.4, // Show 1.3 slides for larger screens
                     centeredSlides: true, // Center the slides
                 },
+                1440: {
+                    slidesPerView: 1.3, // Show 1.3 slides for larger screens
+                    centeredSlides: true,
+                }
             }}
         >
             {servicesData.map((service, index) => (

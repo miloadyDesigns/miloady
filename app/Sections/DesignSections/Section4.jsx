@@ -23,7 +23,7 @@ const Section4 = () => {
                     <div className='text-white'>
                         <h1 className='text-3xl'>Impressive MileStone</h1>
                         <p className='text-[14px] pt-4 text-gray-400'>
-                            At Milaody Design, we pride ourselves on achieving key milestones that demonstrate our commitment to excellence. From delivering custom solutions to driving measurable business growth for our clients, each milestone reflects our dedication to quality and innovation. Whether it's launching a successful website, achieving top rankings through SEO, or running high-performing marketing campaigns, we continuously strive to exceed expectations. Our journey is defined by the success stories of our clients, and we are excited to continue reaching new heights together.
+                            At Milaody Design, we pride ourselves on achieving key milestones that demonstrate our commitment to excellence. From delivering custom solutions to driving measurable business growth for our clients, each milestone reflects our dedication to quality and innovation. Whether it&apos;s launching a successful website, achieving top rankings through SEO, or running high-performing marketing campaigns, we continuously strive to exceed expectations. Our journey is defined by the success stories of our clients, and we are excited to continue reaching new heights together.
                         </p>
                         <div className='mt-6 flex justify-around flex-wrap pb-4'>
                             <div>
@@ -103,7 +103,6 @@ const Section4 = () => {
                             <div className='mt-4 ml-3'>
                                 <p className='text-white text-lg'>We take pride in delivering exceptional design solutions that exceed your expectations. We are committed to your satisfaction, and our design guarantee reflects our dedication to providing you with high-quality work.</p>
                                 <p className='text-white text-lg mt-8'>At Milaody Design, we guarantee satisfaction by working closely with you throughout the design process. Every project benefits from unlimited revisions during the design phase, ensuring your vision comes to life. Our team creates 100% original concepts, customized to align with your brand identity and requirements. We prioritize timely delivery, striking a balance between speed and maintaining exceptional quality. With Milaody Design, your project is in the hands of a team committed to exceeding expectations.</p>
-                                {/* <p className='text-white text-lg mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti ullam magni, iusto quos quam odio necessitatibus ratione culpa quisquam odit maiores rerum, rem excepturi aliquid modi sequi praesentium enim exercitationem animi amet. Aspernatur quia suscipit voluptatem rem, commodi distinctio eius non cupiditate, aut sit debitis, nisi vero. Dicta, deleniti?</p> */}
                             </div>
                         </div>
                         <div className='xs:w-[100%] lg:w-[45%] h-full  rounded-xl xs:mt-12 lg:mt-0'>

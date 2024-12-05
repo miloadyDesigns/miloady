@@ -34,20 +34,22 @@ const Section1 = () => {
     });
     return (
         <div className="relative  section_one bg-black section">
-            <section className="lg:w-[80%]  absolute top-0 flex flex-col h-full xs:w-[100%] lg:left-[8%] xs:left-0 z-10 ">
-                <div className="h-full flex flex-col justify-center ">
-                    <h1 className="headref text-white xs:text-[30px] md:text-[42px] lg:text-[52px] 1366:text-[60px] 2xl:text-[86px] xs:ml-2 font-extrabold xl:text-[70px] font-pp">
+            <section className="lg:w-[80%]  absolute top-0 flex flex-col h-full xs:w-[100%] lg:left-[8%] xs:left-0 md:left-[4%] z-10 ">
+                <div className="h-full flex flex-col justify-center">
+                    <h1 className="headref text-white xs:text-[30px] md:text-[52px] lg:text-[52px] 1366:text-[60px] 2xl:text-[86px] xs:ml-2 font-extrabold xl:text-[70px] font-pp">
                         UNLEASHING
-                        <span className="font-back xl:text-[94px] xs:text-[34px] xls:text-[40px] lg:text-[74px] text-[#70000E] 1366:text-[104px] 2xl:text-[124px] ml-3">Creativity</span>
+                        <span className="font-back xl:text-[94px] xs:text-[34px] xls:text-[40px] md:text-[72px] lg:text-[74px] text-[#70000E] 1366:text-[104px] 2xl:text-[124px] ml-3">Creativity</span>
                         <br />
                         <span className="font-pp">
                             IN EVERY DETAIL
                             <span className="w-6 h-6 rounded-full bg-[#70000E] inline-block ml-2"></span>
                         </span>
                     </h1>
-                    <div className="xs:[300px] lg:w-[600px] text-white para-2 p-2 font-text xs:text-[14px] lg:text-xl">
+                    <div className="xs:[300px] md:w-[500px] lg:w-[600px] text-white para-2 p-2 font-text xs:text-[14px] md:text-[18px] lg:text-xl">
                         <p>We’re your one-stop marketing partner, combining creativity and strategy across every service, from design and digital to social and beyond. Together, we’ll make your brand unforgettable. </p>
-                        <SideButton title={"G&nbsp;&nbsp;E&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;C&nbsp;&nbsp;H"} />
+                        <div className='xs:mt-2 md:mt-4 lg:mt-4'>
+                            <SideButton title={"G&nbsp;&nbsp;E&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;C&nbsp;&nbsp;H"} size={25}/>
+                        </div>
                     </div>
                 </div>
             </section>

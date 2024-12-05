@@ -13,7 +13,7 @@ const Testimonials = ({ gradient1, gradient2, name, stars, image, description, d
             <div className='opacity-40 absolute right-0 top-0'>
                 <Image src={image} width={150} height={150} />
             </div>
-            <div className='w-auto xs:mt-12 lg:mt-20 text-white xs:text-[18px] lg:text-xl font-text font-bold '>
+            <div className='w-auto xs:mt-12 lg:mt-20 text-white xs:text-[18px] md:text-[22px] lg:text-xl font-text font-bold '>
                 <p>
                     {description.split(' ').slice(0, 10).join(' ')} <span className='text-white font-sans text-md font-thin'>{' ' + description.split(' ').slice(10).join(' ')}</span>
                 </p>
@@ -27,7 +27,7 @@ const Testimonials = ({ gradient1, gradient2, name, stars, image, description, d
                         value={stars} // Use passed stars prop
                         edit={false}
                     />
-                    <h1 className='mt-4 ml-2 xs:text-[20px] lg:text-[28px]  leading-none font-bold'>{name}, <span >{designation}</span></h1>
+                    <h1 className='mt-4 ml-2 xs:text-[20px] md:text-[24px] lg:text-[28px]  leading-none font-bold'>{name}, <span >{designation}</span></h1>
                 </div>
             </div>
         </div>

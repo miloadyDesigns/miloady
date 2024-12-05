@@ -23,7 +23,7 @@ const items = [
 
 
 
-const page = () => {
+const Page = () => {
     const [selectedValue, setSelectedValue] = useState("mobile_apps_dev");
 
     return (
@@ -65,4 +65,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

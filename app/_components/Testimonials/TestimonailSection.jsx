@@ -42,9 +42,26 @@ const TestimonailSection = () => {
         prevArrow: <SamplePrevArrow />,
         initialSlide: 0,
         responsive: [
-
             {
-                breakpoint: 600,
+                breakpoint: 1025, // For screens up to 770px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
+                },
+            },
+            {
+                breakpoint: 770, // For screens up to 770px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
+                },
+            },
+            {
+                breakpoint: 600, // For screens up to 600px
                 settings: {
                     slidesToShow: 1.06,
                     slidesToScroll: 1,
@@ -65,11 +82,11 @@ const TestimonailSection = () => {
                     <div className='moving_text'>CRAFTING EXPERIENCES THAT MATTER.</div>
                 </div>
             </div>
-            <div className=' flex xs:flex-col left-0  z-10 items-center justify-around testimonialSection'>
-                <div className="testimonialHead text-white  ml-[8%]  xs:w-[100%] lg:w-[40%] xl:w-[40%]  ">
-                    <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">What Our Clients Say</p>
-                    <h1 className="text-while font-pp lg:text-[50px] xl:text-[66px] xs:text-[38px] -mt-2">Our Testimonials</h1>
-                    <p className="text-white p-1 lg:hidden font-text xs:text-[14px] lg:text-lg">Discover how our innovations have helped clients across various industries achieve success.
+            <div className='flex xs:flex-col left-0  z-10 items-center justify-around testimonialSection mt-12'>
+                <div className="testimonialHead text-white xs:w-[100%]  lg:w-[100%] xl:w-[100%] ">
+                    <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2 xs:text-left md:text-center">What Our Clients Say</p>
+                    <h1 className="text-while font-pp lg:text-[50px] xl:text-[66px] xs:text-[38px] -mt-2 xs:text-left md:text-center">Our Testimonials</h1>
+                    <p className="text-white p-1 lg:hidden font-text xs:text-[14px] md:text-[20px] lg:text-lg xs:text-left md:text-center">Discover how our innovations have helped clients across various industries achieve success.
                         Read their stories and see the impact of our work in their own words.</p>
                     {/* <SideButton title={"L&nbsp;&nbsp;E&nbsp;&nbsp;A&nbsp;&nbsp;R&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;O&nbsp;R&nbsp;&nbsp;E"} margin={"ml-2"} /> */}
                 </div>

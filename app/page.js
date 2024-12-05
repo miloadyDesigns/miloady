@@ -81,7 +81,7 @@ const DevopsCloud = () => {
         <h1 className="text-4xl ml-4 text-white">DevOps</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Devops").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -92,7 +92,7 @@ const DevopsCloud = () => {
         <h1 className="text-4xl ml-4 text-white">Cloud</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Cloud").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -109,7 +109,7 @@ const Database = () => {
         <h1 className="text-4xl ml-4 text-white">Database</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Databse").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -127,7 +127,7 @@ const WebApps = () => {
         <h1 className="text-4xl ml-4 text-white">Frontend</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Frontend").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -138,7 +138,7 @@ const WebApps = () => {
         <h1 className="text-4xl ml-4 text-white">Backend</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Backend").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -149,7 +149,7 @@ const WebApps = () => {
         <h1 className="text-4xl ml-4 text-white">CMS</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "CMS").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -166,7 +166,7 @@ const MobileApps = () => {
         <h1 className="text-4xl ml-4 text-white">iOS</h1>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "iOS").map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -177,7 +177,7 @@ const MobileApps = () => {
         <h1 className="text-4xl ml-4 text-white">Android</h1>
         <div className="flex flex-row gap-4 mt-4  flex-wrap">
           {techData.filter((item) => item.niche == 'Android').map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -188,7 +188,7 @@ const MobileApps = () => {
         <h1 className="text-4xl ml-4 text-white">Cross Platforms</h1>
         <div className="flex flex-row gap-4 mt-4  flex-wrap">
           {techData.filter((item) => item.niche == 'Hybird').map((tech, index) => (
-            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 w-[200px] rounded-full p-3">
+            <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
               <h1 className="text-xl text-white">{tech.name}</h1>
             </div>
@@ -373,10 +373,10 @@ export default function Home() {
             <Section5 />
             <div className='w-screen mb-[10%]'>
               <div className="w-[80%] m-auto">
-                <h1 className="text-white xs:text-[24px] lg:text-[52px] font-bold font-pp  xs:text-center lg:text-left">Technologies we use.</h1>
-                <p className="text-white mt-4 xs:text-[16px] lg:text-2xl xs:w-[100%] lg:w-[50%] xs:text-center lg:text-left">Hire from our pool of 350+ specialized experts in web, mobile, and software engineering, specializing in the latest technologies and frameworks, ready to scale your development teams effortlessly.</p>
-                <div className="border h-[70vh] border-l-0 border-b-0 border-r-0 border-t-2 border-gray-600 mt-8 flex flex-row xs:hidden lg:flex">
-                  <div className="w-[25%] p-2 flex xs:flex-row lg:flex-col  items-center mt-4 xs:hidden lg:flex">
+                <h1 className="text-white xs:text-[24px] md:text-[32px] lg:text-[52px] font-bold font-pp  xs:text-center lg:text-left">Technologies we use.</h1>
+                <p className="text-white mt-4 xs:text-[16px] lg:text-2xl xs:w-[100%] xl:w-[50%] xs:text-center lg:text-left">Hire from our pool of 350+ specialized experts in web, mobile, and software engineering, specializing in the latest technologies and frameworks, ready to scale your development teams effortlessly.</p>
+                <div className="border h-[70vh] border-l-0 border-b-0 border-r-0 border-t-2 border-gray-600 mt-8 flex flex-row xs:hidden xl:flex">
+                  <div className="w-[25%] p-2 flex xs:flex-row lg:flex-col  items-center mt-4 xs:hidden xl:flex">
                     <div onClick={() => handleCategorySelect('WebApps')} className={`${selectedCategory == "WebApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[20px] w-[250px] border border-gray-600 text-center rounded-full cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
                       Web Platforms
                     </div>
@@ -400,7 +400,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="w-[70%] border pl-2 border-t-0 border-l-1 border-b-0 border-r-0 border-gray-600 xs:hidden lg:block">
+                  <div className="w-[70%] border pl-2 border-t-0 border-l-1 border-b-0 border-r-0 border-gray-600 xs:hidden xl:block">
                     {selectedCategory === 'MobileApps' && <MobileApps />}
                     {selectedCategory === 'WebApps' && <WebApps />}
                     {selectedCategory === 'Database' && <Database />}
@@ -409,7 +409,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-screen  ">
-                <div className="w-[100%] p-2 flex flex-row gap-2 justify-start items-center mt-4 lg:hidden xs:flex  overflow-x-auto " style={{ minHeight: "100px" }}>
+                <div className="w-[100%] p-2 flex flex-row gap-2 justify-start items-center mt-4 xl:hidden xs:flex  overflow-x-auto " style={{ minHeight: "100px" }}>
                   <div onClick={() => handleCategorySelect('WebApps')} className={`${selectedCategory == "WebApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px] w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full  cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
                     Web Platforms
                   </div>
@@ -432,7 +432,7 @@ export default function Home() {
                     Animation
                   </div>
                 </div>
-                <div className="w-[70%] border pl-2 border-t-0 border-l-1 border-b-0 border-r-0 border-gray-600 xs:block lg:hidden">
+                <div className="xs:w-[100%] md:w-[100%] border border-l-0 border-b-0 border-r-0 border-t-2 pl-2  border-gray-600 xs:block xl:hidden">
                   {selectedCategory === 'MobileApps' && <MobileApps />}
                   {selectedCategory === 'WebApps' && <WebApps />}
                   {selectedCategory === 'Database' && <Database />}

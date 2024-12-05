@@ -46,7 +46,7 @@ const Section5 = ({ title, description, item1, item2, item3, item4, item5, item6
                             <h1 className="xs:text-[18px] lg:text-xl font-semibold">{item6}</h1>
                         </div>
                         <div className="w-[100%] mt-8 rounded-3xl p-3 bg-[#70000E] cursor-pointer xs:block lg:hidden">
-                            <h1 className="text-center text-white">Let's Discuss</h1>
+                            <h1 className="text-center text-white">Let&apos;s Discuss</h1>
                         </div>
                     </div>
                     <div className="xs:w-[100%] lg:w-[40%]  mr-[10%] xs:mt-12 lg:mt-0">

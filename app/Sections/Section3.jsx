@@ -313,9 +313,9 @@ const Section3 = () => {
         <div className="relative  section_three  xs:mb-[10%] lg:mb-[5%]">
             <section className="w-full z-10">
                 <div className="portfolioSection text-white xs:ml-[8%] lg:ml-[7%] 2xl:ml-[8%] xl:ml-[7%]  lg:w-[50%] 2xl:w-[30%] xs:w-[90%]">
-                    <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">Empowering the world through our technlogies</p>
-                    <h1 className="text-while font-pp lg:text-[66px] xs:text-[38px] -mt-2">Our Portfolio</h1>
-                    <p className="text-white lg:hidden p-1 font-text xs:text-[14px] lg:text-lg">Explore our diverse portfolio showcasing innovative projects and successful collaborations across various industries. See how we bring creative ideas to life with precision and excellence.</p>
+                    <p className="text-[#999696] font-text pl-2 xs:text-[14px] md:text-[16px] lg:text-lg mt-2">Empowering the world through our technlogies</p>
+                    <h1 className="text-while font-pp lg:text-[55px] xl:text-[66px] xs:text-[38px] md:text-[46px] -mt-2">Our Portfolio</h1>
+                    <p className="text-white p-1 font-text xs:text-[14px] md:hidden">Explore our diverse portfolio showcasing innovative projects and successful collaborations across various industries. See how we bring creative ideas to life with precision and excellence.</p>
                 </div>
 
                 <div className="w-full">

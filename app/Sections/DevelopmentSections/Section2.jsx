@@ -45,7 +45,7 @@ const Section2 = () => {
                     </div>
                     <div className='p-2 flex gap-y-12 flex-wrap  justify-around mt-12'>
                         {cardData.map((card, index) => (
-                            <Cards title={card.title} image={card.image} description={card.description} />
+                            <Cards key={index} title={card.title} image={card.image} description={card.description} />
                         ))}
                     </div>
                 </div>
