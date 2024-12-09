@@ -27,7 +27,7 @@ const Testimonials = ({ gradient1, gradient2, name, stars, image, description, d
                         value={stars} // Use passed stars prop
                         edit={false}
                     />
-                    <h1 className='mt-4 ml-2 xs:text-[20px] md:text-[24px] lg:text-[28px]  leading-none font-bold'>{name}, <span >{designation}</span></h1>
+                    <h3 className='mt-4 ml-2 xs:text-[20px] md:text-[24px] lg:text-[28px]  leading-none font-bold'>{name}, <span >{designation}</span></h3>
                 </div>
             </div>
         </div>

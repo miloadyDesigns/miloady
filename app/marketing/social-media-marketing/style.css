@@ -1,0 +1,78 @@
+.consultationButton {
+    height: 50px;
+    width: 260px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .consultationButton:hover {
+    box-shadow: 1px 1px 200px white;
+    color: black;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  
+  .carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: rotateX(-20deg) translateY(-70px);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    user-select: none;
+    cursor: grab;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    height: 250px;
+    transform: translate3d(0, 0, -10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform-origin: 50% 50%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .carousel {
+      transform: rotateX(-10deg) scale(0.6) translateY(-60px);
+      height: 50vh;
+    }
+  }

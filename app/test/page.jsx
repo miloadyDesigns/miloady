@@ -14,7 +14,7 @@ import Section5 from "../Sections/InnerPagesSections/Section5";
 import Section6 from "../Sections/InnerPagesSections/Section6";
 import Section7 from "../Sections/InnerPagesSections/Section7";
 import Footer from "../_components/Footer";
-gsap.registerPlugin(useGSAP, ScrollTrigger, Observer)
+
 const serviceImages = [
     "/development/innerPages/ios/iphoneService1.svg",
     "/development/innerPages/ios/iphoneService2.svg",

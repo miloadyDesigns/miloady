@@ -98,7 +98,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='p-2 lg:-mt-10'>
-                <h1 className='text-gray-600 text-center'>Copyright © 2024 MLD. All right reserved.</h1>
+                <h3 className='text-gray-600 text-center'>Copyright © 2024 MLD. All right reserved.</h3>
             </div>
             {/* <div className="border h-[10vh]">
 

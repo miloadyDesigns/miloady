@@ -77,7 +77,7 @@ const PinSection = () => {
             });
 
             details.forEach((detail, index) => {
-                const headline = detail.querySelector("h1");
+                const headline = detail.querySelector("h3");
                 const animation = gsap.timeline()
                     .to(photos[index], { yPercent: 0 })
                     .set(allPhotos[index], { autoAlpha: 0 });
@@ -106,7 +106,7 @@ const PinSection = () => {
             {/* <div className="spacer"></div> */}
             <div className="process_head xl:w-[50%] xs:w-[90%] lg:w-[80%] text-white ml-[7%]">
                 <p className="text-[#999696] font-text pl-2 xs:text-[14px] lg:text-lg mt-2">Our Seamless Process</p>
-                <h1 className="text-while font-pp lg:text-[60px] xl:text-[60px] xs:text-[38px] leading-none">From Vision to Success</h1>
+                <h3 className="text-while font-pp lg:text-[60px] xl:text-[60px] xs:text-[38px] leading-none">From Vision to Success</h3>
                 {/* <p className="text-white p-1 font-text xs:text-[14px] lg:text-[18px]">Transforming your ideas into reality with strategic planning, innovative solutions, and relentless execution. We take your concept and turn it into a tangible success, every step driven by creativity, precision, and a deep understanding of your goals.</p> */}
             </div>
             <div className="gallery" ref={galleryRef}>
@@ -114,7 +114,7 @@ const PinSection = () => {
                     <div className="desktopContent text-white">
                         {items.map((item, index) => (
                             <div key={index} className="desktopContentSection">
-                                <h1 className='lg:text-[36px] xs:text-[30px] text-gray-500 font-pp'>{item.num}</h1>
+                                <h3 className='lg:text-[36px] xs:text-[30px] text-gray-500 font-pp'>{item.num}</h3>
                                 <div className="lg:text-[32px] xs:text-[18px]  xs:hidden lg:block">
                                     <span className="xl:text-[54px] lg:text-[42px] xs:text-[32px] m-0">{item.name}</span>
                                 </div>

@@ -44,14 +44,14 @@ const PinInnerProcess = ({ items }) => {
             <div className="flex justify-center xs:flex-col lg:flex-row lg:mb-[10%] " ref={galleryRef}>
                 <div className="xs:w-[100%] lg:w-[50%]" ref={rightRef}>
                     <div className="xs:lg-2 lg:mt-32">
-                        <h1 className="text-white font-bold text-center xs:text-[36px] lg:text-[52px]">Our Approach.</h1>
+                        <h3 className="text-white font-bold text-center xs:text-[36px] lg:text-[52px]">Our Approach.</h3>
                     </div>
                 </div>
                 <div className="left-section xs:w-[100%] lg:w-[50%]">
                     <div className=" text-white">
                         {items.map((item, index) => (
                             <div key={index} className="mt-12 mb-12 p-2 rounded-2xl xs:w-[100%] lg:w-[80%] pl-6" style={{ background: 'radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%)' }}>
-                                <h1 className="lg:text-[36px] xs:text-[36px] text-gray-500">{item.num}</h1>
+                                <h3 className="lg:text-[36px] xs:text-[36px] text-gray-500">{item.num}</h3>
                                 <div className="lg:text-[32px] xs:text-[24px] xs:leading-tight font-bold">
                                     {item.name}
                                 </div>

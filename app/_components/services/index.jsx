@@ -56,7 +56,7 @@ const ServiceCard = ({ title, description, image, subheading }) => (
     <div className='h-full flex xs:flex-col lg:flex-row xs:space-y-2 lg:space-x-12  xs:items-center'>
         <div className='lg:w-[50%] xs:w-[100%] md:w-[90%] '>
             <div className='flex flex-col justify-center h-full'>
-                <h1 className='text-white ml-4 xs:text-[30px] md:text-[38px] lg:text-[33px] font-bold xl:text-[50px]   leading-none'>{title}</h1>
+                <h2 className='text-white ml-4 xs:text-[30px] md:text-[38px] lg:text-[33px] font-bold xl:text-[50px]   leading-none'>{title}</h2>
                 <p className='text-white ml-4 font-text xs:text-[17px] md:text-[22px] lg:text-[17px] xl:text-xl lg:w-[80%] mt-4'>{description}</p>
 
             </div>
@@ -64,7 +64,7 @@ const ServiceCard = ({ title, description, image, subheading }) => (
         <div className='w-[90%] xs:block lg:hidden flex-col items-center justify-center'>
 
             <div className='flex ml-4 mt-4 space-x-2 items-center xs:flex lg:hidden'>
-                <h1 className='font-text text-white cursor-pointer hidden'>L E A R N &nbsp; M O R E</h1>
+                <h2 className='font-text text-white cursor-pointer hidden'>L E A R N &nbsp; M O R E</h2>
                 <div className='bg-[#1B1D21] p-2 rounded-full cursor-pointer hidden'>
                     <GrFormNextLink color='white' />
                 </div>

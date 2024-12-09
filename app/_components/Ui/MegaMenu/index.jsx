@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from 'next/link';
 import { useHeaderVisibility } from '@/context/HeaderVisibilityProvider ';
+import { IoIosCall } from 'react-icons/io';
 
 const MegaMenu = () => {
     // State to track if the Products menu is active or not
@@ -50,7 +51,7 @@ const MegaMenu = () => {
         <header style={{ display: isVisible ? "none" : "block" }} className={` ${isSticky ? 'sticky ' : 'primaryHeader'}`} onMouseEnter={() => mouseEnterHandler()} onMouseLeave={() => mouseLeaveHandler()}>
             <div className="container">
                 <nav className="navigation">
-                    <Link href="/" className="logo ">
+                    <Link href="/" className="logo">
                         {/* <img src="/header/logo.svg" alt="Logo" className="logo-img" /> */}
                         <Image
                             className=''
@@ -60,11 +61,11 @@ const MegaMenu = () => {
                             alt="Logo"
                         />
                     </Link>
-                    <ul className="nav_menu  ">
+                    <ul className="nav_menu ">
                         <li className="nav_list font-myfont  [word-spacing:2px]">
-                            <a href="#!" className="nav_link">
+                            <Link href="/about" className="nav_link">
                                 <span>A B O U T</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav_list text-white nav_list_menu font-myfont [word-spacing:2px]">
                             <a href="#!" className="nav_link" onClick={handleDropdownToggle}>
@@ -79,7 +80,7 @@ const MegaMenu = () => {
                                     <div className="dropdown-item w-full relative">
                                         <div className='m-6 absolute right-0 w-[50%]'>
                                             <div className='flex justify-between items-center'>
-                                                <h1 className='text-white text-4xl'>Services</h1>
+                                                <h3 className='text-white text-4xl'>Services</h3>
                                                 <div className='right-icon'>
                                                     <FaArrowRightLong size={26} color='#A3001A' />
                                                 </div>
@@ -89,7 +90,7 @@ const MegaMenu = () => {
                                             </div>
                                         </div>
                                         <div className='m-6 flex flex-col   absolute bottom-0 right-0 w-[50%]'>
-                                            <h1 className='text-white text-2xl'>Technologies</h1>
+                                            <h3 className='text-white text-2xl'>Technologies</h3>
                                             <div className='right-icon'>
                                                 <div className='flex gap-4 flex-wrap  mt-2'>
                                                     <img src="/tech/tech1.svg" alt="" className="w-[50px] h-[50px] techImg" />
@@ -111,152 +112,78 @@ const MegaMenu = () => {
 
                                     <div className="dropdown-item flex gap-12 flex-wrap ">
                                         <div className=''>
+                                            <h3 className="item-heading font-bold m-2 text-xl">Website Development</h3>
+                                            <ul className='ml-2'>
+                                                <li className='mt-2'> <span class="headerDot"></span> Full-Stack Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Frontend Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Backend Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Ecommerce Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> WordPress Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> CMS Development</li>
+                                            </ul>
+                                        </div>
+                                        <div className=''>
                                             <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
                                             <ul className='ml-2'>
                                                 <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
                                                 <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
                                                 <li className='mt-2'> <span class="headerDot"></span> Ecommerce App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> visionOS Development</li>
                                                 <li className='mt-2'> <span class="headerDot"></span> Enterprise App Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Hybrid App Development</li>
                                             </ul>
                                         </div>
                                         <div className=''>
-                                            <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
+                                            <h3 className="item-heading font-bold m-2 text-xl">Design</h3>
                                             <ul className='ml-2'>
-                                                <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Ecommerce App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> visionOS Development</li>
-                                            </ul>
-                                        </div>
-                                        <div className=''>
-                                            <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
-                                            <ul className='ml-2'>
-                                                <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Ecommerce App Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Logo Design</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> UI/UX</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Graphic Design</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Merchandise Design</li>
 
                                             </ul>
                                         </div>
                                         <div className=''>
-                                            <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
+                                            <h3 className="item-heading font-bold m-2 text-xl">MVP and SharePoint</h3>
                                             <ul className='ml-2'>
-                                                <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> SharePoint Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> MVP Development</li>
                                             </ul>
                                         </div>
                                         <div className=''>
-                                            <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
+                                            <h3 className="item-heading font-bold m-2 text-xl">Digital Marketing</h3>
                                             <ul className='ml-2'>
-                                                <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Ecommerce App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> visionOS Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Enterprise App Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Social Media Marketing</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Search Engine Optimization</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Pay-Per Click</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Email Marketing</li>
+                                            </ul>
+                                        </div>
+                                        <div className=''>
+                                            <h3 className="item-heading font-bold m-2 text-xl">Video Animation</h3>
+                                            <ul className='ml-2'>
+                                                <li className='mt-2'> <span class="headerDot"></span> Whiteboard Animation</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> 2D Animation</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> 3D Animation</li>
+                                            </ul>
+                                        </div>
 
+                                        <div className=''>
+                                            <h3 className="item-heading font-bold m-2 text-xl">MVP and SharePoint</h3>
+                                            <ul className='ml-2'>
+                                                <li className='mt-2'> <span class="headerDot"></span> SharePoint Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> MVP Development</li>
                                             </ul>
                                         </div>
+
                                         <div className=''>
-                                            <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
+                                            <h3 className="item-heading font-bold m-2 text-xl">Blockchain Development</h3>
                                             <ul className='ml-2'>
-                                                <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Ecommerce App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> visionOS Development</li>
-                                            </ul>
-                                        </div>
-                                        <div className=''>
-                                            <h3 className="item-heading font-bold m-2 text-xl">Mobile App Development</h3>
-                                            <ul className='ml-2'>
-                                                <li className='mt-2'> <span class="headerDot"></span> iOS App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Android App Development</li>
-                                                <li className='mt-2'> <span class="headerDot"></span> Ecommerce App Development</li>
+                                                <li className='mt-2'> <span class="headerDot"></span> Web3 Development</li>
                                             </ul>
                                         </div>
 
 
                                     </div>
-
-                                    {/* <div className="dropdown-item border">
-                                        <h3 className="item-heading">Resources</h3>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-9.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>Blog</h4>
-                                                <p>The latest industry news.</p>
-                                            </div>
-                                        </div>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-10.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>Customer stories</h4>
-                                                <p>Learn how our customers.</p>
-                                            </div>
-                                        </div>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-11.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>Video tutorials</h4>
-                                                <p>New features and techniques.</p>
-                                            </div>
-                                        </div>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-12.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>Documentation</h4>
-                                                <p>All the boring stuff.</p>
-                                            </div>
-                                        </div>
-                                    </div> */}
-
-                                    {/* <div className="dropdown-item">
-                                        <h3 className="item-heading">Company</h3>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-13.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>About us</h4>
-                                                <p>Learn about our story.</p>
-                                            </div>
-                                        </div>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-14.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>Press</h4>
-                                                <p>News and press resources.</p>
-                                            </div>
-                                        </div>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-15.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <span className="info-badge">We’re hiring!</span>
-                                                <h4>Careers</h4>
-                                                <p>Join our team!</p>
-                                            </div>
-                                        </div>
-                                        <div className="item-list">
-                                            <div className="item-img">
-                                                <img src="/header/icon-16.svg" alt="Icon" />
-                                            </div>
-                                            <div className="item-list-info">
-                                                <h4>Legal</h4>
-                                                <p>All the boring stuff.</p>
-                                            </div>
-                                        </div>
-                                    </div> */}
                                 </div>
                             </div>
                         </li>
@@ -276,13 +203,13 @@ const MegaMenu = () => {
                             </a>
                         </li>
                     </ul>
-                    <div className="nav_action ">
-                        <a href="#!" className="btn">Log in</a>
-                        <a href="#!" className="btn-primary">Sign up</a>
-                        <div className="nav_toggle">
-                            {/* Replace the ion-icon with AiOutlineMenu */}
-                            <AiOutlineMenu size={24} />
-                        </div>
+                    <div className="nav_action">
+                        <li> <div className='shadow__btn p-4 bg-black cursor-pointer' >
+                            <IoIosCall color='white' size={20} />
+                        </div></li>
+                        <li> <div className='shadow__btn p-4 bg-black cursor-pointer' >
+                            <AiOutlineMenu color='white' size={20} />
+                        </div></li>
                     </div>
                 </nav>
             </div >

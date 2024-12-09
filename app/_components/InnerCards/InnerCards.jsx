@@ -84,7 +84,7 @@ const InnerCards = () => {
             <div className="relative">
               <img src={slide.img} alt={slide.name} />
               <div className="absolute bottom-0 left-0 bg-black opacity-90 w-full h-[40%]">
-                <h1 className="xs:text-3xl lg:text-4xl text-white mt-4 ml-4 font-bold font-sans">{slide.title}</h1>
+                <h3 className="xs:text-3xl lg:text-4xl text-white mt-4 ml-4 font-bold font-sans">{slide.title}</h3>
                 <p className="mt-4 ml-4 text-white xs:text-[16px] lg:text-2xl w-[90%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente illo officia tempora repellat sunt nobis quos veniam numquam. Odio laboriosam cumque ipsam fuga ducimus placeat necessitatibus culpa excepturi quasi corporis.</p>
               </div>
             </div>

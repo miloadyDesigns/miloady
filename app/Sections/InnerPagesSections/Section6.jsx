@@ -60,9 +60,9 @@ const Section6 = ({ title, teamSlider }) => {
         <div className="w-screen relative xs:mt-16 lg:mt-0">
             <div className="xs:w-[100%] lg:w-[80%] m-auto h-full flex xs:flex-col lg:flex-row justify-center items-center">
                 <div className="xs:w-[100%] lg:w-[60%]">
-                    <h1 className="text-white xs:text-[28px] lg:text-[42px] font-poppins font-bold xs:w-[100%] lg:w-[80%] xs:p-2 lg:p-0">
+                    <h3 className="text-white xs:text-[28px] md:text-[36px] lg:text-[32px] xl:text-[42px] font-poppins font-bold xs:w-[100%] lg:w-[80%] xs:p-2 lg:p-0 xs:text-center md:text-center lg:text-left">
                         Transform your Business with our valuable iPhone Solutions.
-                    </h1>
+                    </h3>
                     <div className="flex flex-row xs:justify-center xs:items-center lg:justify-start lg:items-start">
                         <button class="consultationButton type1 mt-4 ">
                             <span class="btn-txt">Request Consultation</span>
@@ -70,7 +70,7 @@ const Section6 = ({ title, teamSlider }) => {
                     </div>
 
                 </div>
-                <div className="xs:w-[100%] lg:w-[40%]">
+                <div className="xs:w-[100%] md:w-[60%] lg:w-[40%]">
                     <div className="carousel" ref={carouselRef}>
                         {teamSlider.map((item, i) => (
                             <div

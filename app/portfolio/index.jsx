@@ -64,9 +64,9 @@ const Portfolio = ({ data }) => {
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-60 rounded-b-lg">
-                                    <h1 className="text-white xs:text-2xl lg:text-3xl font-poppins font-bold text-center">
+                                    <h3 className="text-white xs:text-2xl lg:text-3xl font-poppins font-bold text-center">
                                         {iteme.title}
-                                    </h1>
+                                    </h3>
                                 </div>
                             </div>
                         </div>

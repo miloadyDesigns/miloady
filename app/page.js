@@ -78,23 +78,23 @@ const DevopsCloud = () => {
   return (
     <>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">DevOps</h1>
+        <h3 className="text-4xl ml-4 text-white">DevOps</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Devops").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
       </div>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">Cloud</h1>
+        <h3 className="text-4xl ml-4 text-white">Cloud</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Cloud").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
@@ -106,12 +106,12 @@ const Database = () => {
   return (
     <>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">Database</h1>
+        <h3 className="text-4xl ml-4 text-white">Database</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Databse").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
@@ -124,34 +124,34 @@ const WebApps = () => {
   return (
     <>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">Frontend</h1>
+        <h3 className="text-4xl ml-4 text-white">Frontend</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Frontend").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
       </div>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">Backend</h1>
+        <h3 className="text-4xl ml-4 text-white">Backend</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "Backend").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
       </div>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">CMS</h1>
+        <h3 className="text-4xl ml-4 text-white">CMS</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "CMS").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
@@ -163,34 +163,34 @@ const MobileApps = () => {
   return (
     <>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">iOS</h1>
+        <h3 className="text-4xl ml-4 text-white">iOS</h3>
         <div className="flex flex-row gap-4 mt-4 flex-wrap">
           {techData.filter((item) => item.niche == "iOS").map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
       </div>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">Android</h1>
+        <h3 className="text-4xl ml-4 text-white">Android</h3>
         <div className="flex flex-row gap-4 mt-4  flex-wrap">
           {techData.filter((item) => item.niche == 'Android').map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
         </div>
       </div>
       <div className="p-4">
-        <h1 className="text-4xl ml-4 text-white">Cross Platforms</h1>
+        <h3 className="text-4xl ml-4 text-white">Cross Platforms</h3>
         <div className="flex flex-row gap-4 mt-4  flex-wrap">
           {techData.filter((item) => item.niche == 'Hybird').map((tech, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 border border-gray-600 xs:w-[180px] md:w-[200px] rounded-full p-3">
               <img src={tech.imgSrc} alt="" className="w-[30px] h-[30px] techImg invert brightness-100" style={{ filter: 'invert(1) brightness(100%)' }} />
-              <h1 className="text-xl text-white">{tech.name}</h1>
+              <h3 className="text-xl text-white">{tech.name}</h3>
             </div>
           ))}
 
@@ -213,132 +213,7 @@ export default function Home() {
   const handleCategorySelect = (category) => {
     setSelectedCategory(category); // Update selected category
   };
-  // useGSAP(() => {
-  //   // GSAP animations
-  //   const tl = gsap.timeline();
 
-  //   tl.from(".headref", {
-  //     x: -600,
-  //     opacity: 0,
-  //     duration: 1,
-  //     ease: "power1.inOut",
-  //   });
-
-  //   tl.from(".para-2", {
-  //     x: -400,
-  //     opacity: 0,
-  //     duration: 1,
-  //     ease: "power1.inOut",
-  //   });
-  //   tl.from(".head_btn", {
-  //     x: -400,
-  //     opacity: 0,
-  //     duration: 1,
-  //     ease: "power1.inOut",
-  //   });
-
-  //   // ScrollTrigger for the upper section
-  //   const t1 = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".section_two",
-  //       start: "top center",
-  //       end: "bottom bottom",
-  //       scrub: 3,
-  //       scroller: ".wrapper",
-  //       toggleActions: "restart pause resume pause",
-  //     },
-  //   });
-
-  //   t1.from(".upperSection", {
-  //     x: -600,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   })
-  //     .from(".service-swiper", {
-  //       y: -600,
-  //       opacity: 0,
-  //       duration: 2,
-  //       ease: "power1.inOut",
-  //     }, "<");
-
-  //   // Portfolio section animations
-  //   const t2 = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".section_three",
-  //       start: "top center",
-  //       end: "bottom bottom",
-  //       scrub: 3,
-  //       scroller: ".wrapper",
-  //       toggleActions: "restart pause resume pause",
-  //     },
-  //   });
-
-  //   t2.from(".portfolioSection", {
-  //     x: -600,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   }).from(".portfolio-swiper", {
-  //     y: -600,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   }, "<");
-  //   const t3 = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".section_five",
-  //       start: "top center",
-  //       end: "bottom bottom",
-  //       scrub: 3,
-  //       scroller: ".wrapper",
-  //       toggleActions: "restart pause resume pause",
-  //     },
-  //   })
-  //   gsap.set(".form-section", { opacity: 0.95 })
-  //   t3.from(".contact-head", {
-  //     x: -800,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   }).from(".form-section", {
-  //     x: 1800,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   }, "<");
-  //   const t4 = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".section_process",
-  //       start: "top center",
-  //       end: "bottom bottom",
-  //       scrub: 3,
-  //       scroller: ".wrapper",
-  //       toggleActions: "restart pause resume pause",
-  //     },
-  //   })
-  //   gsap.set(".process_main", { opacity: 0.95 })
-  //   t4.from(".process_head", {
-  //     x: -800,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   }).from(".process_main", {
-  //     x: 1800,
-  //     opacity: 0,
-  //     duration: 2,
-  //     ease: "power1.inOut",
-  //   }, "<");
-  //   ScrollTrigger.create({
-  //     trigger: ".section_five",
-  //     start: "top 20%",
-  //     end: "bottom top",
-  //     onEnter: () => setIsVisible(true),
-  //     onLeaveBack: () => setIsVisible(false),
-  //     scroller: ".wrapper"
-  //   });
-
-  // });
 
   return (
     <>
@@ -352,7 +227,7 @@ export default function Home() {
             <section className="w-[90vw] absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[100]">
               <div className="w-full bg-black bg-opacity-95 rounded-xl flex">
                 <div className='w-[40%]  flex items-center justify-center'>
-                  <h1 className="xs:text-[18px] p-2 lg:text-[42px] text-white font-poppins text-center font-bold uppercase">Our Trusted <br /> <span className=''>Partners</span> </h1>
+                  <h3 className="xs:text-[18px] p-2 lg:text-[42px] text-white font-poppins text-center font-bold uppercase">Our Trusted <br /> <span className=''>Partners</span> </h3>
                 </div>
                 <Marquee gradient={false} speed={100} pauseOnHover={true} className="p-12">
                   <img src={"/partners/icone-1.png"} className="xs:w-[80px] xs:h-[60px] lg:w-[120px] lg:h-[70px] ml-20" />
@@ -373,9 +248,9 @@ export default function Home() {
             <Section5 />
             <div className='w-screen mb-[10%]'>
               <div className="w-[80%] m-auto">
-                <h1 className="text-white xs:text-[24px] md:text-[32px] lg:text-[52px] font-bold font-pp  xs:text-center lg:text-left">Technologies we use.</h1>
+                <h3 className="text-white xs:text-[24px] md:text-[32px] lg:text-[52px] font-bold font-pp  xs:text-center lg:text-left">Technologies we use.</h3>
                 <p className="text-white mt-4 xs:text-[16px] lg:text-2xl xs:w-[100%] xl:w-[50%] xs:text-center lg:text-left">Hire from our pool of 350+ specialized experts in web, mobile, and software engineering, specializing in the latest technologies and frameworks, ready to scale your development teams effortlessly.</p>
-                <div className="border h-[70vh] border-l-0 border-b-0 border-r-0 border-t-2 border-gray-600 mt-8 flex flex-row xs:hidden xl:flex">
+                <div className="border h-[80vh] border-l-0 border-b-0 border-r-0 border-t-2 border-gray-600 mt-8 flex flex-row xs:hidden xl:flex">
                   <div className="w-[25%] p-2 flex xs:flex-row lg:flex-col  items-center mt-4 xs:hidden xl:flex">
                     <div onClick={() => handleCategorySelect('WebApps')} className={`${selectedCategory == "WebApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[20px] w-[250px] border border-gray-600 text-center rounded-full cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
                       Web Platforms
@@ -408,7 +283,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-screen  ">
+              <div className="w-screen">
                 <div className="w-[100%] p-2 flex flex-row gap-2 justify-start items-center mt-4 xl:hidden xs:flex  overflow-x-auto " style={{ minHeight: "100px" }}>
                   <div onClick={() => handleCategorySelect('WebApps')} className={`${selectedCategory == "WebApps" ? "bg-white text-black font-bold" : "text-white"} p-4 text-[16px] w-[250px] border border-gray-600 text-center whitespace-nowrap rounded-full  cursor-pointer transition-all duration-500 hover:bg-white hover:text-black`}>
                     Web Platforms

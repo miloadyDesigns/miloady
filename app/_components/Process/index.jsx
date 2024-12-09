@@ -43,18 +43,18 @@ const items = [
         description: "Our Maintenance and Support services ensure your systems remain up-to-date, secure, and running smoothly long after the initial project is complete. We provide proactive monitoring, troubleshooting, and timely updates to prevent issues before they arise. Whether it's routine maintenance, performance optimization, or addressing urgent concerns, our dedicated support team is always ready to assist, ensuring your operations stay efficient and uninterrupted."
     },
 ]
-const ProcessSection = ({faqsData}) => {
+const ProcessSection = ({ faqsData }) => {
     return (
         <AccordionRoot collapsible defaultValue={[faqsData[0].name]} className="w-full">
             {faqsData.map((item, index) => (
                 <AccordionItem key={index} value={item.name} className="text-white p-4 ">
                     <AccordionItemTrigger>
-                        <div className="lg:text-[32px] xs:text-[18px] font-bold ">
+                        <div className="lg:text-[32px] xs:text-[18px] md:text-[24px] font-bold ">
                             <span >{item.name}</span>
                         </div>
-                       
+
                     </AccordionItemTrigger>
-                    <AccordionItemContent className="font-normal xs:text-[14px] lg:text-[24px] font-text">{item.description}</AccordionItemContent>
+                    <AccordionItemContent className="font-normal xs:text-[14px] md:text-[18px] lg:text-[24px] font-text">{item.description}</AccordionItemContent>
                 </AccordionItem>
             ))}
         </AccordionRoot>
