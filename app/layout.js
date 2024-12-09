@@ -21,7 +21,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: {
-    template: "%s - Miloady Designs",
+    template: "%s",
     default: "Miloady Designs Innovative Strategies for Your Brand",
   },
   description: "Miloady Designs Expert in development, graphics, marketing & animation services. Elevate your brand with creative solutions!",

@@ -168,8 +168,9 @@ const faqsData = [
   },
 ]
 export const metadata = {
-  title: "2D Animation",
-  description:"Miloady Designs offers expert 2D animation services to bring your ideas to life with creativity, precision, and engaging visuals."
+  title: "2D Animation Services - Engaging Visuals",
+  description: "Miloady Designs offers expert 2D animation services to bring your ideas to life with creativity, precision, and engaging visuals.",
+  keywords: "2d animation services in united states,2D animation services, affordable 2D animation, animation studio, custom 2D animation, professional 2D animation, 2D animation for business, animation design services, 2D cartoon animation, animation for websites, animated explainer videos,best 2d animation services,2d animation services usa"
 }
 const Page = () => {
   return (

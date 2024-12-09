@@ -168,7 +168,8 @@ const faqsData = [
     },
 ]
 export const metadata = {
-    title: "Whiteboard Animation"
+    title: "Whiteboard Animation Services Get Yours Now!",
+    description:"Miloady Designs offers professional whiteboard animation services to bring your ideas to life with engaging, creative visuals."
 }
 const Page = () => {
     return (

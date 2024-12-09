@@ -169,7 +169,9 @@ const faqsData = [
     },
 ]
 export const metadata = {
-    title: "Search Engine Optimization"
+    title: "Search Engine Optimization Services",
+    description:"Miloady Designs offers expert SEO services to boost your online presence and drive more traffic to your website. Get started today!",
+    keywords:"affordable SEO services, local SEO experts, SEO for small businesses, beginner SEO tips, on-page SEO strategies, SEO for websites, SEO marketing solutions, SEO optimization for beginners, effective SEO techniques, SEO content writing"
 }
 const Page = () => {
     return (
