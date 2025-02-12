@@ -317,7 +317,7 @@ export default function Home() {
             </div>
             <Section6 />
             {/* <CommonSections /> */}
-            <div className='bg-[#0A0A0A]'>
+            <div className='bg-[#0A0A0A] '>
               <Footer />
             </div>
           </ScrollContext>
