@@ -70,8 +70,8 @@ const Page = () => {
       <div className="body TreeBg formBrief" id="section7">
         <p className="mb-12 text-center">
           This Website brief serves as a foundation for planning and executing
-          the initial mockup of your website. It's essential to ensure all
-          stakeholders have a clear understanding of the project's objectives
+          the initial mockup of your website. Its essential to ensure all
+          stakeholders have a clear understanding of the projects objectives
           and strategies.
         </p>
         <form onSubmit={handleSubmit} className="webFormBrief">
